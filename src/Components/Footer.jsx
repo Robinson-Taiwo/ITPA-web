@@ -27,7 +27,7 @@ const Footer = () => {
 
 
             <p className="footer-text">
-           Ilorin Technology Professionals Association was established
+              Ilorin Technology Professionals Association was established
             </p>
           </div>
 
@@ -49,21 +49,18 @@ const Footer = () => {
 
             <Link to="/" >Home</Link>
           </p>
-          <p>
 
-            <Link to="/Books" >Books</Link>
-          </p>
           <p>
 
             <Link to="/About" >About</Link>
           </p>
           <p>
-            <Link to="/Achievements" >Achievement</Link>
+            <Link to="/Eventnpm run dev" >Events</Link>
 
           </p>
           <p>
 
-            <Link to="/Team" >Team</Link>
+            <Link to="/gallery" >Gallery</Link>
           </p>
           <p>
 

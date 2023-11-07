@@ -1,16 +1,37 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import rocket from "../assets/Icons/rocket.svg"
 import vision from "../assets/Icons/vision.svg"
-
-import kwa from "../assets/Images/kwac.webp"
+import call from "../assets/Icons/cal.svg"
 
 import PageLayout from './PageLayout'
-import "./Home.css"
+import AOS from 'aos';
+import nasa from "../assets/Images/nasa.jpg"
+import tech from "../assets/Images/tech.jpg"
 
+import 'aos/dist/aos.css'; // Import the CSS
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+import "./Home.css"
 const Home = () => {
+
+
+     const images = [
+          'nasa',
+          'tech',
+          'nasa',
+          'tech',
+          'nasa',
+          'tech',
+
+
+
+     ]
+
      return (
           <PageLayout>
 
@@ -57,52 +78,53 @@ const Home = () => {
 
                </div>
 
-
-               <div className="our-mission">
-
-                    <div className="mission-head">
-
-                         <h1 className="text">
-                              OUR MISSION
-                         </h1>
-                         <img src={rocket} alt="" className='rocket' />
-                    </div>
+               <div className="vision-mision">
 
 
-                    <p>
-                         Coalition of Information and Communication Technology Professionals for Societal Development.
-                    </p>
+                    <div className="our-mission">
+
+                         <div className="mission-head">
+
+                              <h1 className="text">
+                                   OUR MISSION
+                              </h1>
+                              <img src={rocket} alt="" className='rocket' />
+                         </div>
 
 
+                         <p>
+                              "Coalition of Information and Communication Technology Professionals for Societal Development."
+                         </p>
 
-               </div>
 
-
-               <div className="our-vision">
-
-                    <div className="vision-head">
-
-                         <h1>Our Vision</h1>
-                         <img src={vision} alt="" className="vision" />
 
                     </div>
 
-                    <p>
-                         Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
-                    </p>
+
+                    <div className="our-vision">
+
+                         <div className="vision-head">
+
+                              <h1>Our Vision</h1>
+                              <img src={vision} alt="" className="vision" />
+
+                         </div>
+
+                         <p>
+                              Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
+                         </p>
 
 
+                    </div>
                </div>
+
+
 
                <div className="about-section">
 
                     <div className="about-overlay">
 
-{/* <img src={kwa} alt="" className="kwa" /> */}
 
-<div className="kwac">
-     
-</div>
 
 
                          <h1>
@@ -120,7 +142,90 @@ const Home = () => {
                     </div>
 
 
+
                </div>
+
+
+               <section className="Gallery">
+
+                    <h1 className="gallery-head">
+                         Check our Gallery
+                    </h1>
+
+
+                    <section className="gallery-container">
+
+
+                         <div className="left-gallery">
+                              <div className="image-grid">
+                                   {images.map((image, index) => (
+                                        <div className="image-item" key={index}>
+                                             <img src={tech} alt={`Image ${index + 1}`} />
+                                        </div>
+                                   ))}
+                              </div>
+
+                         </div>
+
+
+                         <Carousel infiniteLoop={true} autoPlay={true} interval={3000}>
+                              <div>
+                                   <img className='ima' src={tech} alt="Image 1" />
+                              </div>
+                              <div>
+                                   <img className='ima' src={nasa} alt="Image 2" />
+                              </div>
+                              <div>
+                                   <img className='ima' src={tech} alt="Image 3" />
+                              </div>
+                         </Carousel>
+
+
+                         <div className="left-gallery">
+                              <div className="image-grid">
+                                   {images.map((image, index) => (
+                                        <div className="image-item" key={index}>
+                                             <img src={tech} alt={`Image ${index + 1}`} />
+                                        </div>
+                                   ))}
+                              </div>
+
+
+                         </div>
+                    </section>
+
+
+                    <button className='see-more' >
+                         Read more...
+                    </button>
+               </section>
+
+
+               <div className="events">
+                    <h2>Upcoming Events    <img src={call} alt="" className='rocket' />   </h2>
+                    <p>
+                         The ITPA Event Calendar lists upcoming events and webinars hosted by ITPA and its chapters. These events cover a wide range of topics, from technical skills training to career development to networking opportunities.
+                    </p>
+
+                    <button className='see-more' >
+                         Check events
+                    </button>
+
+               </div>
+
+
+               <section className="contact-section">
+
+                    <h1>Contact US    <img src={call} alt="" className='rocket' />  </h1>
+                    <p>
+                         The ITPA Contact page provides contact information for the ITPA National Office and its chapters. Visitors can also use this page to submit a general inquiry to ITPA.
+                    </p>
+
+                    <button className='see-more' >
+                         Conact us
+                    </button>
+
+               </section>
 
 
 

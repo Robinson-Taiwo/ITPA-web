@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    overflow: hidden;
+    /* scroll-behavior: smooth; */
+
+}
+
+
 .Home-first {
     /* 
         background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%), url(/images/background-image-1.jpg); */
@@ -6,9 +17,9 @@
     /* transition: background-image 1s ease; */
     background-size: cover;
     background-repeat: no-repeat;
-    animation: changeBackgroundImage 10s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* animation: changeBackgroundImage 10s infinite cubic-bezier(0.165, 0.84, 0.44, 1); */
 
-    @apply h-[60vh] desktop:h-[80vh] bg-center bg-cover bg-no-repeat mb-[3rem]
+    @apply h-[60vh] desktop:h-[80vh] bg-center bg-cover bg-no-repeat mb-[3rem] overflow-hidden
 }
 
 
@@ -18,7 +29,7 @@
 }
 
 .home-first-overlay h1 {
-    @apply text-[1.78rem] text-white font-bold desktop:text-[3rem]
+    @apply text-[1.78rem] text-white font-bold desktop:text-[3rem] desktop:w-[80%] wide:w-[70%]
 }
 
 .home-first-overlay div {
@@ -26,26 +37,43 @@
 }
 
 .home-first-overlay p {
-    @apply text-[white] text-[0.8rem] font-medium desktop:text-[1.5rem] text-start mt-[1rem] pr-[1.5rem]
+    @apply text-[white] text-[0.8rem] font-medium desktop:text-[1.2rem] text-start mt-[1rem] pr-[1.5rem] desktop:w-[70%] wide:w-[50%]
 }
 
 
 .home-explore {
-    background-color: transparent;
-    color: #1d486a;
+    /* background-color: red; */
+    /* color: #1d486a;
     border: 2px solid #1d486a;
     padding: 10px 20px;
+    cursor: pointer; */
+    /* transition: color 0.3s, box-shadow 0.3s; */
+    border: 1px solid #213e8c;
     cursor: pointer;
     transition: color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #213e8c;
+    /* White box shadow */
+
+    @apply bg-transparent rounded-full text-white px-[1.9rem] py-[0.9rem] mb-[2rem] text-[0.8rem] desktop:text-[1rem] mt-[2rem] font-semibold
+    /* White box shadow */
+    /* White box shadow */
     /* background-image: linear-gradient(to left, #1d486a, white); */
 
+    /* @apply  text-white bg-transparent py-[0.9rem] px-[1.9rem] rounded-full shadow-2xl font-semibold */
+}
 
-    @apply mt-[2rem] text-white bg-transparent py-[0.9rem] px-[1.9rem] rounded-full shadow-2xl font-semibold shadow-slate-900
+button:hover {
+
+    background-color: #213e8c;
+    transition: ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    /* Lighter white shadow on hover */
 }
 
 .our-story {
     @apply h-fit pb-[2rem] w-[100vw] items-center flex-col flex justify-center
 }
+
 
 
 .our-story h1 {
@@ -116,9 +144,11 @@
 }
 
 
+
+
 .our-mission {
     background-image: url(../assets/Images/nasa.jpg);
-    @apply bg-center bg-cover bg-no-repeat h-[30vh] text-white flex-col flex items-center
+    @apply bg-center bg-cover bg-no-repeat desktop:h-[50vh] text-white flex-col flex items-center desktop:flex-row h-[30vh]
 }
 
 .rocket {
@@ -128,13 +158,13 @@
 .mission-head {
     font-family: 'Edu TAS Beginner';
 
-    @apply flex flex-row w-[100%] justify-center pt-[1rem] items-center text-[2rem] gap-[0.5rem] font-bold
+    @apply flex flex-row w-[100%] justify-center pt-[1rem] items-center text-[2rem] gap-[0.5rem] font-bold desktop:bg-[#213e8c] desktop:h-[100%] desktop:text-[2.5rem]
 }
 
 .our-mission p {
     font-family: 'Edu TAS Beginner';
 
-    @apply text-center mt-[1rem] text-[1.2rem] font-medium px-[4%]
+    @apply text-center mt-[1rem] text-[1.2rem] font-medium px-[4%] desktop:text-[1.5rem]
 }
 
 .vision {
@@ -142,52 +172,199 @@
 }
 
 .vision-head {
-    @apply flex flex-row w-[100%] justify-center items-center text-[2rem] font-bold mb-[1rem] gap-[0.5rem] mt-[1rem]
+    @apply flex flex-row w-[100%] justify-center items-center text-[2rem] font-bold mb-[1rem] gap-[0.5rem] mt-[1rem] desktop:text-[2.5rem]
 }
 
 .our-vision {
     font-family: 'Edu TAS Beginner';
 
-    @apply flex flex-col text-[#213e8c] mb-[2rem]
+    @apply flex flex-col text-[#213e8c] desktop:flex-row desktop:h-[50vh] h-[30vh]
 }
 
 .our-vision p {
-    @apply text-[black] text-center font-medium px-[4%]
+    @apply text-[black] text-center px-[4%] desktop:h-[100%] flex justify-center items-center font-medium text-[1.2rem] desktop:text-[1.5rem] desktop:bg-[#213e8c]
 }
 
 
 .about-section {
     background-image: url(../assets/Images/tech.jpg);
-    @apply bg-center bg-cover bg-no-repeat
+    @apply bg-center bg-cover bg-no-repeat h-fit
 }
 
 .about-overlay {
     background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%);
-    @apply h-[100%] w-[100%] flex flex-col justify-center items-center desktop:items-start desktop:pl-[5rem] px-[1rem] text-start
+    @apply h-[100%] w-[100%] flex flex-col justify-center items-center desktop:items-center desktop:pl-[5rem] px-[1rem] text-start
 }
 
-.about-overlay h1{
+.about-overlay h1 {
     font-family: 'Courgette', cursive;
 
     @apply text-white text-[2rem] font-bold mb-[1rem] mt-[1rem]
 }
 
-.about-overlay p{
+.about-overlay p {
     font-family: 'Courgette', cursive;
 
-    @apply text-[#97a7d4] text-center  mb-[1rem] leading-8
+    @apply text-[white] text-center mb-[1rem] leading-8 desktop:w-[70%]
 }
 
-.about-overlay button{
-    border: 1px solid white ;
+.about-overlay button {
+    border: 1px solid white;
     cursor: pointer;
-    transition: color 0.3s, box-shadow 0.3s;  
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White box shadow */
+    transition: color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* White box shadow */
 
-      @apply bg-transparent rounded-full text-white px-[1rem] py-[0.5rem] mb-[2rem] text-[0.8rem]
+    @apply bg-transparent rounded-full text-white px-[1rem] py-[0.5rem] mb-[2rem] text-[0.8rem]
 }
 
-.kwac{
+.kwac {
     background-image: url(../assets/Images/kwac.webp);
     @apply w-[100%] bg-center bg-cover bg-no-repeat h-[30vh] mt-[1rem]
+}
+
+
+
+.lop:hover {
+    transform: scale(1.1);
+    border-color: #555;
+}
+
+.Gallery {
+    @apply flex desktop:flex-col flex-col w-[100%] items-center justify-center
+}
+
+
+
+
+.gallery-container {
+    @apply flex flex-col desktop:flex-row w-[100%]
+}
+
+.gallery-head {
+    font-family: 'Edu TAS Beginner';
+    @apply text-[2rem] font-bold py-[1rem] text-[#213e8c]
+}
+
+
+/* CustomCarousel.css (or you can include this in your existing CSS file) */
+.carousel-root {
+    /* max-width: 40%; */
+    /* Set the maximum width of the carousel */
+    margin: 0 auto;
+    /* Center the carousel */
+
+    @apply desktop:max-w-[40%] max-w-[85%] h-[100%]
+}
+
+.carousel {
+    border: 1px solid #ddd;
+    /* Add a border around the carousel */
+    border-radius: 5px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #f5f5f5; */
+    /* Background color for each slide */
+    border-radius: 5px;
+}
+
+.carousel .thumbs-wrapper {
+    /* display: none; */
+    @apply flex w-[100%] justify-center
+    /* Hide the thumbnail navigation */
+}
+
+.carousel .thumbs {
+    margin-top: 10px;
+}
+
+.carousel .thumbs .thumb {
+    border: 2px solid #fff;
+    /* Add border to carousel thumbnails */
+    border-radius: 4px;
+}
+
+.carousel .thumbs .thumb.selected,
+.carousel .thumbs .thumb:hover {
+    border-color: #007BFF;
+    /* Highlight selected or hovered thumbnail */
+}
+
+.carousel .slider-wrapper {
+    margin: 0;
+}
+
+.carousel .slider {
+    transition: transform 0.5s ease;
+    /* Customize slide transition */
+}
+
+
+/* CSS for the ImageGrid component */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 16px;
+    /* Spacing between items */
+}
+
+.image-item {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left-gallery {
+    flex: 1;
+    @apply hidden desktop:flex
+}
+
+.see-more {
+    border: 1px solid #213e8c;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #213e8c;
+    /* White box shadow */
+
+    @apply bg-[#213e8c] bg-opacity-5 rounded-full text-[#213e8c] px-[1.9rem] py-[0.9rem] mb-[2rem] text-[0.8rem] desktop:text-[1rem] mt-[2rem] font-semibold hover:text-white
+}
+
+.events, .contact-section {
+    @apply flex flex-col justify-center items-center mt-[1rem] h-[40vh] 
+}
+
+.events h2 {
+    font-family: 'Edu TAS Beginner';
+
+    @apply text-[2rem] desktop:text-[2.5rem] font-bold text-[#213e8c] flex-row flex w-[100%] items-center justify-center mb-[0.5rem]
+}
+
+.contact-section h1 {
+    font-family: 'Edu TAS Beginner';
+    @apply text-[2rem] desktop:text-[2.5rem] font-bold text-[#213e8c] flex-row flex w-[100%] items-center justify-center mb-[0.5rem]
+}
+
+.events p, .contact-section p {
+    font-family: 'Edu TAS Beginner';
+
+    @apply text-[1rem] desktop:text-[1rem] font-medium w-[80%] text-center
+}
+
+
+.hockey{
+    @apply h-[2rem] w-[2rem] desktop:h-[4rem] desktop:w-[4rem]
+}
+
+.ima{
+    @apply h-[100%] w-[100%]
 }

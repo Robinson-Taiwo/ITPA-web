@@ -3,7 +3,7 @@
 }
 
 .nav-logo {
-    @apply mb-[1.44rem] mt-[1.88rem] w-[3.5rem] h-[3.125rem] desktop:w-[10.69rem] desktop:h-[2.6rem]
+    @apply mb-[1.44rem] mt-[1.88rem] w-[3.5rem] h-[3.125rem] desktop:w-[4.69rem] desktop:h-[2.6rem] 
 }
 
 .navbar-button {
