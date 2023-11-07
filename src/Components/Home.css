@@ -134,7 +134,7 @@
 .our-mission p {
     font-family: 'Edu TAS Beginner';
 
-    @apply text-center mt-[1rem] text-[1.2rem] font-medium
+    @apply text-center mt-[1rem] text-[1.2rem] font-medium px-[4%]
 }
 
 .vision{
@@ -148,9 +148,9 @@
 .our-vision{
     font-family: 'Edu TAS Beginner';
 
-    @apply flex flex-col text-[#213e8c]
+    @apply flex flex-col text-[#213e8c] mb-[2rem]
 }
 
 .our-vision p{
-    @apply text-[black] 
+    @apply text-[black] text-center font-medium px-[4%]
 }
