@@ -1,0 +1,64 @@
+.navbar-container {
+    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative desktop:px-[3rem] wide:px-[3rem] bg-[#213e8c]
+}
+
+.nav-logo {
+    @apply mb-[1.44rem] mt-[1.88rem] w-[3.5rem] h-[3.125rem] desktop:w-[10.69rem] desktop:h-[2.6rem]
+}
+
+.navbar-button {
+    width: 9.5625rem;
+    height: 2.625rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 0.625rem;
+    border: 2px solid #FFF;
+    @apply flex items-center justify-center text-white text-[1.125rem] font-medium
+}
+
+
+.nav-menu {
+    @apply mb-[1.31rem] mt-[2.25rem]
+}
+
+.nav-line {
+    background: rgba(255, 255, 255, 0.18);
+    @apply h-[0.005rem] w-[100%] 
+}
+
+.circle {
+    background-image: url(../src/assets/icons/cancel_circle.svg);
+    width: 1.4375rem;
+    height: 1.4375rem;
+    @apply flex items-center desktop:hidden justify-center absolute right-[3rem]
+}
+
+.menu {
+    @apply min-h-screen top-0 w-[100vw] fixed bg-blue opacity-100 left-0 flex-col text-white pl-[2.94rem] desktop:flex-row ;
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds viewport */
+    z-index: 1000; /* Set a higher z-index value */
+  }
+.ll{
+    @apply hidden desktop:flex
+}
+
+.liok{
+    @apply desktop:hidden 
+}
+
+.menu-item-container {
+    @apply mt-[6rem] flex flex-col gap-[1.81rem] desktop:flex-row desktop:mt-[0rem] desktop:items-center desktop:justify-center desktop:text-white desktop:gap-[7.56rem]
+}
+
+.menu-item {
+    
+    @apply text-[1.125rem] font-medium tracking-[-0.0625rem] desktop:text-[1rem] desktop:font-normal 
+}
+
+.menu-register {
+    border-radius: 0.25rem;
+    @apply bg-primary h-[3.125rem] w-[10.75rem]
+}
+
+.menu-item-two{
+@apply flex desktop:flex-row wide:gap-[3.5rem] desktop:gap-[2rem] gap-[1.81rem] flex-col desktop:items-center 
+}
