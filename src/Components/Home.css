@@ -252,6 +252,8 @@ button:hover {
     /* max-width: 40%; */
     /* Set the maximum width of the carousel */
     margin: 0 auto;
+    background: #213e8c;
+
     /* Center the carousel */
 
     @apply desktop:max-w-[40%] max-w-[85%] h-[100%]
@@ -268,7 +270,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    /* background-color: #f5f5f5; */
+    background-color: #b91b1b;
     /* Background color for each slide */
     border-radius: 5px;
 }
@@ -340,7 +342,7 @@ button:hover {
 }
 
 .events, .contact-section {
-    @apply flex flex-col justify-center items-center mt-[1rem] h-[40vh] 
+    @apply flex flex-col justify-center items-center mt-[1rem] h-[40vh]
 }
 
 .events h2 {
@@ -361,10 +363,10 @@ button:hover {
 }
 
 
-.hockey{
+.hockey {
     @apply h-[2rem] w-[2rem] desktop:h-[4rem] desktop:w-[4rem]
 }
 
-.ima{
+.ima {
     @apply h-[100%] w-[100%]
 }

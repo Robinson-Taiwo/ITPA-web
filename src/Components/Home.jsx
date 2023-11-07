@@ -6,7 +6,7 @@ import Footer from './Footer'
 import rocket from "../assets/Icons/rocket.svg"
 import vision from "../assets/Icons/vision.svg"
 import call from "../assets/Icons/cal.svg"
-
+import event from "../assets/Icons/event.svg"
 import PageLayout from './PageLayout'
 import AOS from 'aos';
 import nasa from "../assets/Images/nasa.jpg"
@@ -202,7 +202,7 @@ const Home = () => {
 
 
                <div className="events">
-                    <h2>Upcoming Events    <img src={call} alt="" className='rocket' />   </h2>
+                    <h2>Upcoming Events    <img src={event} alt="" className='rocket' />   </h2>
                     <p>
                          The ITPA Event Calendar lists upcoming events and webinars hosted by ITPA and its chapters. These events cover a wide range of topics, from technical skills training to career development to networking opportunities.
                     </p>
