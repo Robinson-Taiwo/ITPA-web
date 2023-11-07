@@ -137,20 +137,57 @@
     @apply text-center mt-[1rem] text-[1.2rem] font-medium px-[4%]
 }
 
-.vision{
+.vision {
     @apply h-[3rem] w-[3rem] font-bold
 }
 
-.vision-head{
-    @apply flex flex-row w-[100%] justify-center items-center text-[2rem]  font-bold mb-[1rem] gap-[0.5rem] mt-[1rem]
+.vision-head {
+    @apply flex flex-row w-[100%] justify-center items-center text-[2rem] font-bold mb-[1rem] gap-[0.5rem] mt-[1rem]
 }
 
-.our-vision{
+.our-vision {
     font-family: 'Edu TAS Beginner';
 
     @apply flex flex-col text-[#213e8c] mb-[2rem]
 }
 
-.our-vision p{
+.our-vision p {
     @apply text-[black] text-center font-medium px-[4%]
+}
+
+
+.about-section {
+    background-image: url(../assets/Images/tech.jpg);
+    @apply bg-center bg-cover bg-no-repeat
+}
+
+.about-overlay {
+    background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%);
+    @apply h-[100%] w-[100%] flex flex-col justify-center items-center desktop:items-start desktop:pl-[5rem] px-[1rem] text-start
+}
+
+.about-overlay h1{
+    font-family: 'Courgette', cursive;
+
+    @apply text-white text-[2rem] font-bold mb-[1rem] mt-[1rem]
+}
+
+.about-overlay p{
+    font-family: 'Courgette', cursive;
+
+    @apply text-[#97a7d4] text-center  mb-[1rem] leading-8
+}
+
+.about-overlay button{
+    border: 1px solid white ;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;  
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White box shadow */
+
+      @apply bg-transparent rounded-full text-white px-[1rem] py-[0.5rem] mb-[2rem] text-[0.8rem]
+}
+
+.kwac{
+    background-image: url(../assets/Images/kwac.webp);
+    @apply w-[100%] bg-center bg-cover bg-no-repeat h-[30vh] mt-[1rem]
 }

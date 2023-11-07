@@ -5,6 +5,8 @@ import Footer from './Footer'
 import rocket from "../assets/Icons/rocket.svg"
 import vision from "../assets/Icons/vision.svg"
 
+import kwa from "../assets/Images/kwac.webp"
+
 import PageLayout from './PageLayout'
 import "./Home.css"
 
@@ -86,11 +88,40 @@ const Home = () => {
                     </div>
 
                     <p>
-                    Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business. 
+                         Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
                     </p>
 
 
                </div>
+
+               <div className="about-section">
+
+                    <div className="about-overlay">
+
+{/* <img src={kwa} alt="" className="kwa" /> */}
+
+<div className="kwac">
+     
+</div>
+
+
+                         <h1>
+                              About ITPA
+                         </h1>
+
+
+                         <p>The Information Technology Professionals Association (ITPA) is a global association that connects, empowers, and advances IT professionals worldwide. With over 5,000 members organized in zones spread across different states and countries, ITPA provides a platform for IT professionals to network, learn, and grow</p>
+
+
+                         <button>
+                              read more...
+                         </button>
+
+                    </div>
+
+
+               </div>
+
 
 
           </PageLayout>
