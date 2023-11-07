@@ -168,7 +168,7 @@ const Home = () => {
                          </div>
 
 
-                         <Carousel infiniteLoop={true} autoPlay={true} interval={3000}>
+                         {/* <Carousel className='carousel' infiniteLoop={true} autoPlay={true} interval={3000}>
                               <div>
                                    <img className='ima' src={tech} alt="Image 1" />
                               </div>
@@ -178,8 +178,23 @@ const Home = () => {
                               <div>
                                    <img className='ima' src={tech} alt="Image 3" />
                               </div>
-                         </Carousel>
+                         </Carousel> */}
 
+
+                         <Carousel showThumbs={false} showArrows={true} showStatus={false} infiniteLoop={true}>
+                              <div>
+                                   <img src="image1.jpg" alt="Image 1" />
+                              </div>
+                              <div>
+                                   <img src="image2.jpg" alt="Image 2" />
+                              </div>
+                              <div>
+                                   <img src="image3.jpg" alt="Image 3" />
+                              </div>
+                              <div>
+                                   <img src="image4.jpg" alt="Image 4" />
+                              </div>
+                         </Carousel>
 
                          <div className="left-gallery">
                               <div className="image-grid">
@@ -196,7 +211,7 @@ const Home = () => {
 
 
                     <button className='see-more' >
-                         Read more...
+                         view more
                     </button>
                </section>
 

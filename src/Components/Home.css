@@ -256,7 +256,7 @@ button:hover {
 
     /* Center the carousel */
 
-    @apply desktop:max-w-[40%] max-w-[85%] h-[100%]
+    @apply desktop:max-w-[40%] max-w-[85%] h-[100%] relative
 }
 
 .carousel {
@@ -368,5 +368,32 @@ button:hover {
 }
 
 .ima {
-    @apply h-[100%] w-[100%]
+    background-image: url(../assets//Images/tech.jpg);
+    @apply h-[100%] w-[100%] bg-center bg-cover bg-no-repeat
+}
+
+/* .carousel div img{
+    @apply 
+} */
+
+
+/* ImageCarousel.css */
+.carousel {
+    max-width: 800px;
+    /* Set the maximum width of the carousel */
+    margin: 0 auto;
+    /* Center the carousel horizontally */
+    /* @apply h-[50rem] */
+}
+
+.carousel .slide {
+    background: none;
+    /* Remove the slide background */
+}
+
+.carousel .slide img {
+    max-width: 100%;
+    /* Ensure images don't exceed their container */
+    height: auto;
+    /* Maintain image aspect ratio */
 }

@@ -1,9 +1,9 @@
 .navbar-container {
-    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative desktop:px-[3rem] wide:px-[3rem] bg-[#213e8c]
+    @apply flex flex-row justify-between items-center w-[100vw] px-[2rem] relative desktop:px-[3rem] wide:px-[3rem] bg-[#213e8c]
 }
 
 .nav-logo {
-    @apply mb-[1.44rem] mt-[1.88rem] w-[3.5rem] h-[3.125rem] desktop:w-[4.69rem] desktop:h-[2.6rem] 
+    @apply mb-[0.84rem] mt-[0.8rem] w-[3.5rem] h-[3.125rem] desktop:w-[4.69rem] desktop:h-[2.6rem] 
 }
 
 .navbar-button {

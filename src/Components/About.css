@@ -1,0 +1,18 @@
+.about-page-head {
+    font-family: Arial, Helvetica, sans-serif;
+    @apply text-[black] font-bold text-[1.8rem] w-[100%] h-fit flex items-center justify-center mt-[2rem] mb-[1rem]
+}
+
+.About-pagel {
+    @apply flex flex-col items-center justify-center w-[100vw] pb-[2rem]
+}
+
+.About-pagel p {
+    font-family: 'Courgette', cursive;
+
+    @apply text-center w-[85%] text-[0.8rem] leading-snug
+}
+
+.loco {
+    @apply ml-[0.5rem]
+}
