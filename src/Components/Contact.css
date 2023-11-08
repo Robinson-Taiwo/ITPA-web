@@ -17,12 +17,12 @@
 }
 
 .contacts-body{
-    @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-[70vh] h-[20vh]
+    @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-[70vh] h-[100%]
 }
 
 .contact-body-image{
     background-image: url(../assets/Images/illu.jpg);
-    @apply w-[100%] desktop:w-[50%]  bg-cover bg-center bg-no-repeat h-[100%]
+    @apply w-[100%] desktop:w-[50%]  bg-cover bg-center bg-no-repeat desktop:h-[100%] h-[40vh]
 }
 
 .contact-body-content{
