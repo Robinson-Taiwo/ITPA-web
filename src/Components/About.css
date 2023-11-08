@@ -80,5 +80,5 @@
 
 .blue-about {
     background-image: url(../assets/Images/tech.jpg);
-    @apply w-[50%] bg-center bg-cover bg-no-repeat
+    @apply w-[50%] bg-center bg-cover bg-no-repeat hidden desktop:flex 
 }
