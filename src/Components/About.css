@@ -10,7 +10,7 @@
 .About-pagel p {
     font-family: 'Courgette', cursive;
 
-    @apply text-center w-[85%] text-[0.8rem] leading-snug
+    @apply text-center w-[75%] text-[0.8rem] leading-snug desktop:leading-8
 }
 
 .loco {
@@ -23,14 +23,62 @@
 }
 
 .ul li {
-    list-style-type:none;
-    @apply pl-[1.5rem] list-decimal text-[0.8rem] flex flex-row gap-[0.5rem] mt-[1ren]
+    list-style-type: none;
+    @apply pl-[1.5rem] list-decimal text-[0.8rem] flex flex-row gap-[0.5rem] desktop:gap-[1rem] mt-[1rem] wide:text-[1rem]
 }
 
 /* .about-page-heada {
     @apply pl-[2rem] text-[0.8rem] 
 } */
 
-.checki{
+.ul {
+    @apply desktop:w-[50%] desktop:h-[100%] desktop:flex-col desktop:flex desktop:justify-evenly desktop:text-[1rem] wide:text-[1.5rem]
+}
+
+.checki {
     @apply h-[1rem] w-[1rem]
+}
+
+.about-quote {
+    @apply w-[100%] items-center justify-center text-center px-[2rem] my-[2rem] desktop:w-[50%]
+}
+
+.about-quote h5 {
+    /* font-style: italic; */
+    font-family: 'Courgette', cursive;
+
+    @apply bg-slate-400 py-[2rem] font-medium shadow-black shadow-inner rounded
+}
+
+.about-partners {
+    @apply w-[100%] h-fit flex items-center justify-center mt-[2rem] mb-[1rem] flex-col
+}
+
+.about-partners h1 {
+
+    @apply w-[100%] flex justify-center items-center text-[#213e8c] font-bold text-[1.5rem]
+}
+
+.part-img {
+    @apply w-[90%] h-[40vh] desktop:w-[70%]
+}
+
+.part-img img {
+    @apply w-[100%] h-[100%]
+}
+
+
+.about-partners h4 {
+    font-family: 'Courgette', cursive;
+
+    @apply w-[80%] text-[0.8rem] text-center mb-[1rem]
+}
+
+.contain-about {
+    @apply w-[80%] desktop:flex desktop:flex-row desktop:h-[50vh]
+}
+
+.blue-about {
+    background-image: url(../assets/Images/tech.jpg);
+    @apply w-[50%] bg-center bg-cover bg-no-repeat
 }

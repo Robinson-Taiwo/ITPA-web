@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+
 import rocket from "../assets/Icons/rocket.svg"
 import vision from "../assets/Icons/vision.svg"
 import call from "../assets/Icons/cal.svg"
@@ -17,6 +16,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import "./Home.css"
+import { Link } from 'react-router-dom'
 const Home = () => {
 
 
@@ -71,7 +71,7 @@ const Home = () => {
                          <h3>years of service</h3>
                     </div>
                     <div>
-                         <h2>10+</h2>
+                         <h2>5+</h2>
                          <h3>Awards</h3>
                     </div>
 
@@ -101,21 +101,6 @@ const Home = () => {
                     </div>
 
 
-                    <div className="our-vision">
-
-                         <div className="vision-head">
-
-                              <h1>Our Vision</h1>
-                              <img src={vision} alt="" className="vision" />
-
-                         </div>
-
-                         <p>
-                              Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
-                         </p>
-
-
-                    </div>
                </div>
 
 
@@ -135,12 +120,32 @@ const Home = () => {
                          <p>The Information Technology Professionals Association (ITPA) is a global association that connects, empowers, and advances IT professionals worldwide. With over 5,000 members organized in zones spread across different states and countries, ITPA provides a platform for IT professionals to network, learn, and grow</p>
 
 
-                         <button>
-                              read more...
-                         </button>
+                         <Link to="/About" >
+                              <button>
+                                   read more...
+                              </button>
+
+                         </Link>
 
                     </div>
 
+
+
+               </div>
+
+
+               <div className="our-vision">
+
+                    <div className="vision-head">
+
+                         <h1>Our Vision</h1>
+                         <img src={vision} alt="" className="vision" />
+
+                    </div>
+
+                    <p>
+                         Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
+                    </p>
 
 
                </div>
@@ -209,10 +214,15 @@ const Home = () => {
                          </div>
                     </section>
 
+                    <Link to="/Gallery" >
 
-                    <button className='see-more' >
-                         view more
-                    </button>
+
+
+                         <button className='see-more' >
+                              view more
+                         </button>
+
+                    </Link>
                </section>
 
 
@@ -222,9 +232,12 @@ const Home = () => {
                          The ITPA Event Calendar lists upcoming events and webinars hosted by ITPA and its chapters. These events cover a wide range of topics, from technical skills training to career development to networking opportunities.
                     </p>
 
-                    <button className='see-more' >
-                         Check events
-                    </button>
+                    <Link to="/Event" >
+
+                         <button className='see-more' >
+                              Check events
+                         </button>
+                    </Link>
 
                </div>
 
@@ -236,9 +249,13 @@ const Home = () => {
                          The ITPA Contact page provides contact information for the ITPA National Office and its chapters. Visitors can also use this page to submit a general inquiry to ITPA.
                     </p>
 
-                    <button className='see-more' >
-                         Conact us
-                    </button>
+                    <Link to="/Contact" >
+
+                         <button className='see-more' >
+                              Conact us
+                         </button>
+                    </Link>
+
 
                </section>
 

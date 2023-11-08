@@ -1,7 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import check from "../assets/Icons/check.svg"
 import PageLayout from './PageLayout'
+import tech from "../assets/Images/tech.jpg"
+
+import kwa from "../assets/Images/kwac.webp"
 import "./About.css"
 
 const About = () => {
@@ -25,44 +29,89 @@ const About = () => {
 
         </p>
 
+
+
+        <div className="about-quote">
+
+          <h5>
+            "We Believe anyone can be productive with ITPA.
+
+            Become a Ready made"
+          </h5>
+
+        </div>
+
+        <div className="about-partners">
+
+          <h1>
+            ITPA'S PARTNERS
+
+          </h1>
+
+
+          <h4>
+            ITPA  has an impeccable partnership with ICT owners and tech inclined personel to foster tech
+          </h4>
+
+          <div className="part-img">
+
+            <img src={kwa} alt="" />
+
+          </div>
+
+        </div>
+
+
+
         <h1 className="about-page-headt">
           Benefits of Membership
         </h1>
 
-        <ul className='ul'>
+        <div className="contain-about">
 
-          <li>
-            <img src={check} className='checki' alt="" />
-            <h4>Access to the latest industry news and trends</h4>
+          <div className="blue-about">
 
-          </li>
+          </div>
 
 
-          <li>
-            <img src={check} alt="" className='checki' />
-            <h4> Networking opportunities with other IT professionals</h4>
+          <ul className='ul'>
+
+            <li>
+              <img src={check} className='checki' alt="" />
+              <h4>Access to the latest industry news and trends</h4>
+
+            </li>
 
 
-          </li>
-
-          <li>
-            <img src={check} className='checki' alt="" />
-            <h4>          Professional development and training opportunities
-            </h4>
-
-          </li>
-
-          <li>
-            <img src={check} className='checki' alt="" />
-            <h4>          Advocacy for the IT profession
-            </h4>
-
-          </li>
+            <li>
+              <img src={check} alt="" className='checki' />
+              <h4> Networking opportunities with other IT professionals</h4>
 
 
+            </li>
+
+            <li>
+              <img src={check} className='checki' alt="" />
+              <h4>          Professional development and training opportunities
+              </h4>
+
+            </li>
+
+            <li>
+              <img src={check} className='checki' alt="" />
+              <h4>          Advocacy for the IT profession
+              </h4>
+
+            </li>
 
 
-        </ul>
+
+
+          </ul>
+
+
+        </div>
+
 
 
       </div>
