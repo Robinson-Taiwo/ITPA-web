@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import check from "../assets/Icons/check.svg"
 import PageLayout from './PageLayout'
 import "./About.css"
 
@@ -24,7 +25,44 @@ const About = () => {
 
         </p>
 
+        <h1 className="about-page-headt">
+          Benefits of Membership
+        </h1>
 
+        <ul className='ul'>
+
+          <li>
+            <img src={check} className='checki' alt="" />
+            <h4>Access to the latest industry news and trends</h4>
+
+          </li>
+
+
+          <li>
+            <img src={check} alt="" className='checki' />
+            <h4> Networking opportunities with other IT professionals</h4>
+
+
+          </li>
+
+          <li>
+            <img src={check} className='checki' alt="" />
+            <h4>          Professional development and training opportunities
+            </h4>
+
+          </li>
+
+          <li>
+            <img src={check} className='checki' alt="" />
+            <h4>          Advocacy for the IT profession
+            </h4>
+
+          </li>
+
+
+
+
+        </ul>
 
 
       </div>

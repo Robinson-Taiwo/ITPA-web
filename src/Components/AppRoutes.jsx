@@ -5,6 +5,7 @@ import Home from './Home'
 import Contact from './Contact'
 import About from './About'
 import Events from './Events'
+import Gallery from './Gallery'
 
 const AppRoutes = () => {
     return (
@@ -14,7 +15,7 @@ const AppRoutes = () => {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/About" element={<About />} />
             <Route path="/Event" element={<Events />} />
-
+            <Route path="/Gallery" element={<Gallery />} />
         </Routes>
     )
 }

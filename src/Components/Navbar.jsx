@@ -77,6 +77,7 @@ const Navbar = ({ backgroundColor, borderGradient }) => {
                             <Link to="/" className="menu-item">Home</Link>
                             <Link to="/About" className="menu-item">About</Link>
                             <Link to="/Event" className="menu-item">Event</Link>
+                            <Link to="/Gallery" className="menu-item">Gallery</Link>
                             <Link to="/contact" className="menu-item navbar-button">Contacts</Link>
                         </div>
 

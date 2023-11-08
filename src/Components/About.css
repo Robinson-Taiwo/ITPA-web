@@ -16,3 +16,21 @@
 .loco {
     @apply ml-[0.5rem]
 }
+
+.about-page-headt {
+    font-family: Arial, Helvetica, sans-serif;
+    @apply text-[#213e8c] font-bold text-[1.5rem] w-[100%] h-fit flex items-center justify-center mt-[2rem] mb-[1rem]
+}
+
+.ul li {
+    list-style-type:none;
+    @apply pl-[1.5rem] list-decimal text-[0.8rem] flex flex-row gap-[0.5rem] mt-[1ren]
+}
+
+/* .about-page-heada {
+    @apply pl-[2rem] text-[0.8rem] 
+} */
+
+.checki{
+    @apply h-[1rem] w-[1rem]
+}
