@@ -20,7 +20,17 @@ const Contact = () => {
 
 
       <div className="contacts-body">
-        
+
+        <div className="contact-body-content">
+
+
+        </div>
+
+        <div className="contact-body-image">
+
+
+        </div>
+
       </div>
 
 
