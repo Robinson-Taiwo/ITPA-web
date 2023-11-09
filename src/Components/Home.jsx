@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react'
@@ -12,13 +13,16 @@ import nasa from "../assets/Images/nasa.jpg"
 import tech from "../assets/Images/tech.jpg"
 
 import 'aos/dist/aos.css'; // Import the CSS
-import { Carousel } from 'react-responsive-carousel';
+// import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import "./Home.css"
 import { Link } from 'react-router-dom'
-const Home = () => {
+import imagesData from './Data'; // Adjust the path based on your project structure
+import GalleryCarousel from './GalleryCarousel'
 
+
+const Home = () => {
 
      const images = [
           'nasa',
@@ -120,12 +124,16 @@ const Home = () => {
                          <p>The Information Technology Professionals Association (ITPA) is a global association that connects, empowers, and advances IT professionals worldwide. With over 5,000 members organized in zones spread across different states and countries, ITPA provides a platform for IT professionals to network, learn, and grow</p>
 
 
-                         <Link to="/About" >
-                              <button>
-                                   read more...
-                              </button>
 
-                         </Link>
+                         <button>
+
+                              <Link to="/About" >
+                                   read more...
+                              </Link>
+
+                         </button>
+
+
 
                     </div>
 
@@ -161,68 +169,29 @@ const Home = () => {
                     <section className="gallery-container">
 
 
-                         <div className="left-gallery">
-                              <div className="image-grid">
-                                   {images.map((image, index) => (
-                                        <div className="image-item" key={index}>
-                                             <img src={tech} alt={`Image ${index + 1}`} />
-                                        </div>
-                                   ))}
-                              </div>
+                         {/* {imagesData.map((data, index) => {
+                              return (
+                                   <div key={index} >
+                                        {console.log(data)}
+                                        <GalleryCarousel images={data} />
 
-                         </div>
+                                   </div>
+                              )
+                         })} */}
 
-
-                         <Carousel className='carousel' infiniteLoop={true} autoPlay={true} interval={3000}>
-                              <div>
-                                   <img className='ima' src={tech} alt="Image 1" />
-                              </div>
-                              <div>
-                                   <img className='ima' src={nasa} alt="Image 2" />
-                              </div>
-                              <div>
-                                   <img className='ima' src={tech} alt="Image 3" />
-                              </div>
-                         </Carousel>
+                         <GalleryCarousel images={imagesData} />
 
 
-                         {/* <Carousel showThumbs={false} showArrows={true} showStatus={false} infiniteLoop={true}>
-                              <div>
-                                   <img src="image1.jpg" alt="Image 1" />
-                              </div>
-                              <div>
-                                   <img src="image2.jpg" alt="Image 2" />
-                              </div>
-                              <div>
-                                   <img src="image3.jpg" alt="Image 3" />
-                              </div>
-                              <div>
-                                   <img src="image4.jpg" alt="Image 4" />
-                              </div>
-                         </Carousel> */}
 
-                         <div className="left-gallery">
-                              <div className="image-grid">
-                                   {images.map((image, index) => (
-                                        <div className="image-item" key={index}>
-                                             <img src={tech} alt={`Image ${index + 1}`} />
-                                        </div>
-                                   ))}
-                              </div>
-
-
-                         </div>
                     </section>
 
-                    <Link to="/Gallery" >
+                    <button className='see-more' >
+                         <Link to="/Gallery" >
+                              see more ..
+
+                         </Link>                         </button>
 
 
-
-                         <button className='see-more' >
-                              view more
-                         </button>
-
-                    </Link>
                </section>
 
 
@@ -232,12 +201,13 @@ const Home = () => {
                          The ITPA Event Calendar lists upcoming events and webinars hosted by ITPA and its chapters. These events cover a wide range of topics, from technical skills training to career development to networking opportunities.
                     </p>
 
-                    <Link to="/Event" >
+                    <button className='see-more' >
+                         <Link to="/Event" >
 
-                         <button className='see-more' >
+
                               Check events
-                         </button>
-                    </Link>
+                         </Link>
+                    </button>
 
                </div>
 
@@ -249,12 +219,14 @@ const Home = () => {
                          The ITPA Contact page provides contact information for the ITPA National Office and its chapters. Visitors can also use this page to submit a general inquiry to ITPA.
                     </p>
 
-                    <Link to="/Contact" >
 
-                         <button className='see-more' >
-                              Conact us
-                         </button>
-                    </Link>
+
+                    <button className='see-more' >
+                         <Link to="/Contact" >
+
+                              Contact us
+                         </Link>
+                    </button>
 
 
                </section>

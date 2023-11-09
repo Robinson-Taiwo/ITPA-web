@@ -1,0 +1,70 @@
+/* GalleryCarousel.css */
+
+.gallery-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.gallery-main-slide {
+    width: 90%;
+    transition: transform 0.5s ease;
+    @apply items-center justify-center flex flex-row  pl-[10%] h-[30vh]
+}
+
+.gallery-main-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail.active {
+    border-color: #00f;
+    /* Change the border color for the active thumbnail */
+}
+
+.autoplay-button {
+    background-color: #3128ec;
+    /* color: #1d486a; */
+    border: 1px solid #1d486a;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+    /* background-image: linear-gradient(to left, #1d486a, white); */
+
+
+    @apply mt-[2rem] text-white bg-[#3128ec] py-[0.9rem] px-[1.9rem] rounded-full shadow-2xl font-semibold shadow-slate-900
+}
+
+
+.carousel-buttons {
+    @apply flex flex-row gap-[2rem] items-center justify-center
+}
+
+.carousel-buttons div {
+    @apply flex items-center justify-center h-[100%] mt-[0rem] pt-[0rem]
+}

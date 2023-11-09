@@ -3,28 +3,149 @@
 }
 
 .contact-header {
-    background-image: url(../assets/Images/audio.jpg);
+    background-image: url(../assets/Images/itpa33.JPG);
     @apply flex items-center justify-start w-[100%] h-[20vh] bg-center bg-cover bg-no-repeat desktop:h-[30vh]
 }
 
-.contact-header h1{
+.contact-header h1 {
     @apply w-[100%] flex justify-center items-center text-[2rem] font-bold text-[white] desktop:text-[4rem]
 }
 
-.contact-overlay{
+.contact-header-overlay {
+    background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%);
+    @apply w-[100%] h-[100%] flex items-center justify-center
+}
+
+.contact-overlay {
     /* background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(117, 115, 115, 0) 0%, rgba(124, 122, 122, 0.8) 0%); */
     @apply h-[100%] w-[100%] bg-opacity-0
 }
 
-.contacts-body{
+.contacts-body {
     @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-[70vh] h-[100%]
 }
 
-.contact-body-image{
+.contact-body-image {
     background-image: url(../assets/Images/illu.jpg);
-    @apply w-[100%] desktop:w-[50%]  bg-cover bg-center bg-no-repeat desktop:h-[100%] h-[40vh]
+    @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat desktop:h-[100%] h-[40vh]
 }
 
-.contact-body-content{
-    @apply w-[100%] desktop:w-[50%]
+.contact-body-content {
+    @apply w-[100%] desktop:w-[50%] flex justify-center items-center desktop:h-[100%] py-[2.5rem] h-[60vh]
+}
+
+
+.contact-contact h1 {
+    @apply text-black text-[0.875rem] font-semibold leading-[172.4%]
+}
+
+.contact-contact div {
+    @apply flex flex-row gap-[1rem]
+}
+
+.contact-contact div p {
+    @apply text-black text-[0.75rem]
+}
+
+.contact-contact div h2 {
+    @apply text-black text-[0.75rem] w-[7.6rem]
+}
+
+.contact-contact {
+    @apply gap-[1rem] flex flex-col pb-[3.75rem] relative
+}
+
+.reserved {
+    @apply text-black text-[0.75rem] w-[100%] flex justify-center items-center relative flex-col
+}
+
+.calling-icon, .follow-us img {
+    @apply w-[2rem] h-[2rem]
+}
+
+.follow-us {
+    @apply flex flex-row justify-evenly
+}
+
+
+
+
+.contacts-first-div {
+    @apply desktop:flex desktop:gap-[1.6rem] desktop:text-white h-[60vh] desktop:flex-col items-center  justify-between flex flex-col  
+}
+
+
+@media (min-width: 1024px) {
+    .contacts-second-div {
+        border-radius: 0.75rem;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.contacts-second-div {
+
+    @apply desktop:w-[33.5625rem] wide:w-[38.5625rem] desktop:h-[38.1875rem] desktop:flex desktop:justify-center desktop:pl-[5.62rem] desktop:items-start desktop:flex-col
+}
+
+.contacts-containerr {
+    @apply flex desktop:flex-row desktop:justify-evenly
+}
+
+.contacts-first-div h1 {
+    @apply desktop:text-[2rem] font-semibold text-[#213e8c]
+}
+
+.contacts-first-div h2 {
+    @apply desktop:w-fit text-black font-medium w-[100%] flex justify-center 
+}
+
+.contacts-first-div h3 {
+    @apply desktop:w-[7.43rem] text-black
+}
+
+.contacts-first-div h4 {
+    @apply desktop:w-[10.693rem] text-black flex justify-center items-center text-center
+}
+
+
+.contacts-first-div h5 {
+    @apply desktop:w-[17rem] text-black w-[80%] text-center
+}
+
+
+.shareon {
+    @apply text-[0.75rem] w-[18.625rem] flex justify-center items-center sphone:w-[100%] desktop:hidden text-[#213e8c]
+}
+
+.sharon {
+    @apply text-[1rem] w-[18.625rem] justify-center items-center sphone:w-[100%] desktop:flex desktop:h-fit desktop:justify-center desktop:text-[1rem] text-[#213e8c] flex 
+}
+
+
+.contact-icons {
+    @apply w-[18.625rem] flex flex-row justify-center items-center gap-[0.82rem] sphone:w-[100%] desktop:hidden
+}
+
+.contact-iconstl {
+    @apply desktop:w-[18.625rem] flex-row justify-center items-center gap-[0.82rem] sphone:w-[100%] desktop:flex desktop:justify-center desktop:flex-row w-[90%] 
+}
+
+
+.contact-iconst img {
+    @apply desktop:w-[1rem] desktop:h-[1.5rem]
+}
+
+.contacts-inpute {
+    @apply desktop:flex desktop:flex-col desktop:items-start desktop:justify-center
+}
+
+.contact-icon {
+    width: 1.81931rem;
+    height: 1.73306rem;
+
+}
+
+.contact-iconstl div{
+    @apply  flex flex-row justify-evenly mb-[2rem]  w-[100%]
 }

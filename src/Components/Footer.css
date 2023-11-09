@@ -37,7 +37,7 @@
 }
 
 .footer-col h2 {
-    @apply font-normal text-[0.875rem] font-semibold
+    @apply  text-[0.875rem] font-semibold
 }
 
 .footer-col p {

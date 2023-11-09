@@ -110,8 +110,8 @@ const Footer = () => {
         <p >
           All rights reserved. © ITPA.
         </p>
-        <p className='mt-[0rem]' >
-          prudly designed by Omoyeni Taiwo
+        <p className='mt-[0rem] text-white' >
+          proudly designed by Omoyeni Taiwo
         </p>
       </div>
 

@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import PageLayout from './PageLayout'
-import instagram from "../assets/Icons/mdi_instagram.svg"
-import x from "../assets/Icons/x.svg"
+import instagram from "../assets/Icons/instagram_icon.svg"
+import x from "../assets/Icons/x_icon.svg"
 import location from "../assets/Icons/location.svg"
-import facebook from "../assets/Icons/facebook.svg"
-import linkedin from "../assets/Icons/linkedin.svg"
-import call from "../assets/Icons/call.svg"
+import facebook from "../assets/Icons/facebook_icon.svg"
+import linkedin from "../assets/Icons/linkedin_icon.svg"
+import call from "../assets/Icons/call_icon.svg"
 import logo from "../assets/Icons/itpa-logo.webp"
+import PageLayout from './PageLayout'
 import "./Contact.css"
 
 const Contact = () => {
@@ -20,7 +20,12 @@ const Contact = () => {
 
         <div className="contact-header">
 
-          <h1>Contact Us</h1>
+          <div className="contact-header-overlay">
+
+            <h1>Contact Us</h1>
+
+          </div>
+
         </div>
 
       </div>
@@ -28,7 +33,8 @@ const Contact = () => {
 
       <div className="contacts-body">
 
-        <div className="contact-body-content">
+        <div className="contact-body-content ">
+
           <div className="contacts-first-div">
 
             <h1>
@@ -41,36 +47,38 @@ const Contact = () => {
             </h2>
 
             <h3>
-              27,Alara Street
-              Yaba 100012
-              Lagos State
+              25 Asa-Dam Rd, Ilorin, Kwara State. 240281
             </h3>
 
             <h4>
 
-              Call Us : 07067981819
+              Call Us : +2347039614411
             </h4>
 
             <h5>
 
-              we are open from Monday-Friday
-              08:00am - 05:00pm
+              ITPA is always at your reach. join or contact us at anytime
             </h5>
 
 
             <div className="sharon">
-              Share on
+              contact us on
             </div>
 
-            <div className="contact-iconst">
+            <div className="contact-iconstl">
 
-              <img src={instagram} alt="" className="contact-icon" />
+              <div>
 
-              <img src={x} alt="" className="contact-icon" />
+                <img src={instagram} alt="" className="contact-icon" />
 
-              <img src={facebook} alt="" className="contact-icon" />
+                <img src={x} alt="" className="contact-icon" />
 
-              <img src={linkedin} alt="" className="contact-icon" />
+                <img src={facebook} alt="" className="contact-icon" />
+
+                <img src={linkedin} alt="" className="contact-icon" />
+
+              </div>
+
 
             </div>
 
