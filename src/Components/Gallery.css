@@ -19,11 +19,15 @@
 }
 
 .events-container {
-    @apply px-[10%]
+    @apply px-[5%] desktop:px-[10%]
 }
 
 .events-container h2 {
     font-family: 'Courgette', cursive;
 
-    @apply font-bold text-[3rem] w-[100%] justify-center items-center flex text-[#2138ec]
+    @apply font-bold text-[2rem] w-[100%] justify-center items-center flex text-[#2138ec] desktop:text-[3rem] mt-[0.5rem]
+}
+
+.events-container p{
+    @apply text-center text-[0.8rem]  mb-[2rem]  desktop:text-[1rem]
 }
