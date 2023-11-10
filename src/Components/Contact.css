@@ -3,7 +3,7 @@
 }
 
 .contact-header {
-    background-image: url(../assets/Images/itpa33.JPG);
+    background-image: url(/Images/itpa33.JPG);
     @apply flex items-center justify-start w-[100%] h-[20vh] bg-center bg-cover bg-no-repeat desktop:h-[30vh]
 }
 
@@ -26,7 +26,7 @@
 }
 
 .contact-body-image {
-    background-image: url(../assets/Images/illu.jpg);
+    background-image: url(/Images/illu.jpg);
     @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat desktop:h-[100%] h-[40vh]
 }
 

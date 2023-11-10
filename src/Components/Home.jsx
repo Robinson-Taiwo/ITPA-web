@@ -9,8 +9,8 @@ import call from "../assets/Icons/cal.svg"
 import event from "../assets/Icons/event.svg"
 import PageLayout from './PageLayout'
 import AOS from 'aos';
-import nasa from "../assets/Images/nasa.jpg"
-import tech from "../assets/Images/tech.jpg"
+import nasa from "/Images/nasa.jpg"
+import tech from "/Images/tech.jpg"
 
 import 'aos/dist/aos.css'; // Import the CSS
 // import { Carousel } from 'react-responsive-carousel';

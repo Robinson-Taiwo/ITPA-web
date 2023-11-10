@@ -3,9 +3,9 @@
 import React from 'react'
 import check from "../assets/Icons/check.svg"
 import PageLayout from './PageLayout'
-import tech from "../assets/Images/tech.jpg"
+import tech from "/Images/tech.jpg"
 
-import kwa from "../assets/Images/kwac.webp"
+import kwa from "/Images/kwac.webp"
 import "./About.css"
 
 const About = () => {

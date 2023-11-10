@@ -12,7 +12,7 @@
 .Home-first {
     /* 
         background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%), url(/images/background-image-1.jpg); */
-    background-image: url(../assets/Images/test-bg.jpg);
+    background-image: url(/Images/test-bg.jpg);
     background-position: center;
     /* transition: background-image 1s ease; */
     background-size: cover;
@@ -147,7 +147,7 @@ button:hover {
 
 
 .our-mission {
-    background-image: url(../assets/Images/nasa.jpg);
+    background-image: url(/Images/nasa.jpg);
     @apply bg-center bg-cover bg-no-repeat desktop:h-[50vh] text-white flex-col flex items-center desktop:flex-row h-[30vh]
 }
 
@@ -219,7 +219,7 @@ button:hover {
 }
 
 .kwac {
-    background-image: url(../assets/Images/kwac.webp);
+    background-image: url(/Images/kwac.webp);
     @apply w-[100%] bg-center bg-cover bg-no-repeat h-[30vh] mt-[1rem]
 }
 
@@ -310,7 +310,7 @@ button:hover {
 }
 
 .ima {
-    background-image: url(../assets//Images/tech.jpg);
+    background-image: url(/Images/tech.jpg);
     @apply h-[100%] w-[100%] bg-center bg-cover bg-no-repeat
 }
 
