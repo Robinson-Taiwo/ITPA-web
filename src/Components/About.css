@@ -53,7 +53,7 @@
 }
 
 .about-partners {
-    @apply w-[100%] h-fit flex items-center justify-center mt-[2rem] mb-[1rem] flex-col
+    @apply w-[100%] h-fit flex items-center justify-center mt-[2rem] mb-[2rem]  mt-[2rem] flex-col
 }
 
 .about-partners h1 {
@@ -74,7 +74,7 @@
 .about-partners h4 {
     font-family: 'sora', sans-serif;
 
-    @apply w-[80%] text-[0.8rem] text-center mb-[1rem]
+    @apply w-[80%] text-[0.8rem] text-center mb-[1rem] desktop:text-[1.1rem]
 }
 
 .contain-about {

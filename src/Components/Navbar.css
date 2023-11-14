@@ -1,7 +1,7 @@
 .navbar-container {
     font-family: 'Sora', sans-serif;
     border-bottom: 1px solid #213e8c;
-    @apply flex flex-row justify-between items-center w-[100vw] px-[2rem] desktop:px-[3rem] wide:px-[3rem] bg-white desktop:py-[0.5rem] relative
+    @apply flex flex-row justify-between items-center w-[100vw] px-[2rem] desktop:px-[3rem] wide:px-[3rem] bg-[#213e8c] desktop:py-[0.5rem] relative
     /* bg-[#213e8c] */
 }
 
@@ -31,8 +31,8 @@
     height: 2.625rem;
 
     border-radius: 0.625rem;
-    border: 1px solid #213e8c;
-    @apply flex items-center justify-center text-[#213e8c] text-[1.125rem] font-bold
+    border: 1px solid white;
+    @apply flex items-center justify-center text-[white] text-[1.125rem] font-bold
 }
 
 
@@ -53,7 +53,7 @@
 }
 
 .menu {
-    @apply min-h-screen top-0 w-[100vw] fixed bg-white opacity-100 left-0 flex-col text-[#213e8c] pl-[2.94rem] desktop:flex-row;
+    @apply min-h-screen top-0 w-[100vw] fixed bg-[#213e8c] opacity-100 left-0 flex-col text-[white] pl-[2.94rem] desktop:flex-row;
     overflow-y: auto;
     /* Enable vertical scrolling when content exceeds viewport */
     z-index: 1000;
@@ -69,12 +69,12 @@
 }
 
 .menu-item-container {
-    @apply mt-[6rem] flex flex-col gap-[1.81rem] desktop:flex-row desktop:mt-[0rem] desktop:items-center desktop:justify-center desktop:text-[#213e8c] desktop:gap-[7.56rem]
+    @apply mt-[6rem] flex flex-col gap-[1.81rem] desktop:flex-row desktop:mt-[0rem] desktop:items-center desktop:justify-center desktop:text-[white] desktop:gap-[7.56rem]
 }
 
 .menu-item {
 
-    @apply text-[1.125rem] font-medium tracking-[-0.0625rem] desktop:font-normal desktop:text-[#213e8c] desktop:text-[1.25rem]
+    @apply text-[1.125rem] font-medium tracking-[-0.0625rem] desktop:font-normal desktop:text-[white] desktop:text-[1.25rem]
 }
 
 .menu-register {

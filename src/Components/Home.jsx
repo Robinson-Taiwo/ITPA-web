@@ -146,11 +146,11 @@ const Home = () => {
                          <h2 className='text-[#3241e7]'><span className="count">0</span>+</h2>
                          <h3>members world-wide</h3>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="900" ref={serviceYearsRef}>
+                    <div data-aos="fade-up" data-aos-delay="100" ref={serviceYearsRef}>
                          <h2 className='text-yellow-300'><span className="count">0</span>+</h2>
                          <h3>years of service</h3>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="1100" ref={awardsRef}>
+                    <div data-aos="fade-up" data-aos-delay="200" ref={awardsRef}>
                          <h2><span className="count">0</span>+</h2>
                          <h3>Awards</h3>
                     </div>
@@ -204,32 +204,32 @@ const Home = () => {
                          <div data-aos="fade-up" className="service-divo ">
 
                               <div className="service-div-overlay">
-                                   <h1 data-aos="fade-up" data-aos-delay="1400" className="se">
+                                   <h1 data-aos="fade-up" className="se">
                                         Promoting  Technology
                                    </h1>
                               </div>
 
 
                          </div>
-                         <div data-aos="fade-up" data-aos-delay="1100" className="service-divt">
+                         <div data-aos="fade-up" className="service-divt">
                               <div className="service-div-overlay">
-                                   <h1 data-aos="fade-up" data-aos-delay="1500" className="se">
+                                   <h1 data-aos="fade-up" className="se">
                                         Extending The Tech Ecosystem
                                    </h1>
                               </div>
 
                          </div>
-                         <div data-aos="fade-up" data-aos-delay="1200" className="service-divth">
+                         <div data-aos="fade-up" className="service-divth">
                               <div className="service-div-overlay">
-                                   <h1 data-aos="fade-up" data-aos-delay="1600" className="se">
+                                   <h1 data-aos="fade-up" className="se">
                                         Inovation
                                    </h1>
                               </div>
 
                          </div>
-                         <div data-aos="fade-up" data-aos-delay="1300" className="service-div">
+                         <div data-aos="fade-up" className="service-div">
                               <div className="service-div-overlay">
-                                   <h1 data-aos="fade-up" data-aos-delay="1700" className="se">
+                                   <h1 data-aos="fade-up" className="se">
                                         Innovative Trainings
                                    </h1>
                               </div>
