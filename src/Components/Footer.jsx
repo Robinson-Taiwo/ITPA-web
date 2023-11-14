@@ -27,8 +27,7 @@ const Footer = () => {
 
 
             <p className="footer-text">
-              Ilorin Technology Professionals Association was established
-            </p>
+              The Information Technology Professionals Association (ITPA) is a global association that connects, empowers, and advances IT professionals worldwide. With over 5,000 members organized in zones spread across different states and countries, ITPA provides a platform for IT professionals to network, learn, and grow            </p>
           </div>
 
 
@@ -110,9 +109,7 @@ const Footer = () => {
         <p >
           All rights reserved. © ITPA.
         </p>
-        <p className='mt-[0rem] text-white' >
-          proudly designed by Omoyeni Taiwo
-        </p>
+
       </div>
 
 

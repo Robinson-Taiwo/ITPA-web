@@ -1,18 +1,41 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useEffect } from 'react'
 import check from "../assets/Icons/check.svg"
 import PageLayout from './PageLayout'
 import tech from "/Images/tech.jpg"
+import AOS from 'aos';
 
 import kwa from "/Images/kwac.webp"
 import "./About.css"
+import MissionCard from './MissionCard'
 
 const About = () => {
+
+
+  useEffect(() => {
+    AOS.init({
+         duration: 3000, // Set the default duration to 3000ms (3 seconds)
+    });
+}, []);
+
+
   return (
     <PageLayout>
 
       <div className="About-pagel">
+
+
+        <div className="about-top">
+
+          <div className="about-top-overlay">
+
+            <h1>About ITPA</h1>
+
+          </div>
+
+
+        </div>
 
         <div className="about-page-head">
           HISTORY OF <span className='text-[#213e8c] loco' >ITPA </span>
@@ -29,6 +52,21 @@ const About = () => {
 
         </p>
 
+
+        <div className="statement-cards">
+
+          <MissionCard title=" Our Mission" content="Coalition of Information and Communication Technology Professionals for Societal Development.
+
+" />
+
+          <MissionCard title=" Our Vision" content="Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
+
+" />
+
+          <MissionCard title=" Our Goal" content="Extending Technology and building professionals" />
+
+          {/* title="Vision" content="Your vision statement goes here." */}
+        </div>
 
 
         <div className="about-quote">

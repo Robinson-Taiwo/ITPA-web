@@ -8,9 +8,9 @@
 }
 
 .About-pagel p {
-    font-family: 'Courgette', cursive;
+    font-family: 'sora', sans-serif;
 
-    @apply text-center w-[75%] text-[0.8rem] leading-snug desktop:leading-8
+    @apply text-center w-[80%] text-[0.9rem] leading-10 desktop:leading-8 desktop:w-[50%] font-light desktop:text-[1rem]
 }
 
 .loco {
@@ -18,11 +18,13 @@
 }
 
 .about-page-headt {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "sora", sans-serif;
     @apply text-[#213e8c] font-bold text-[1.5rem] w-[100%] h-fit flex items-center justify-center mt-[2rem] mb-[1rem]
 }
 
 .ul li {
+    font-family: "sora", sans-serif;
+
     list-style-type: none;
     @apply pl-[1.5rem] list-decimal text-[0.8rem] flex flex-row gap-[0.5rem] desktop:gap-[1rem] mt-[1rem] wide:text-[1rem]
 }
@@ -40,7 +42,7 @@
 }
 
 .about-quote {
-    @apply w-[100%] items-center justify-center text-center px-[2rem] my-[2rem] desktop:w-[50%]
+    @apply w-[100%] items-center justify-center text-center px-[2rem] my-[2rem] desktop:w-[50%] hidden
 }
 
 .about-quote h5 {
@@ -55,6 +57,7 @@
 }
 
 .about-partners h1 {
+    font-family: "sora", sans-serif;
 
     @apply w-[100%] flex justify-center items-center text-[#213e8c] font-bold text-[1.5rem]
 }
@@ -64,12 +67,12 @@
 }
 
 .part-img img {
-    @apply w-[100%] h-[100%]
+    @apply w-[100%] h-[100%] rounded-2xl
 }
 
 
 .about-partners h4 {
-    font-family: 'Courgette', cursive;
+    font-family: 'sora', sans-serif;
 
     @apply w-[80%] text-[0.8rem] text-center mb-[1rem]
 }
@@ -79,6 +82,28 @@
 }
 
 .blue-about {
-    background-image: url(/Images/tech.jpg);
-    @apply w-[50%] bg-center bg-cover bg-no-repeat hidden desktop:flex 
+    background-image: url(/Images/itpa21.JPG);
+    @apply w-[50%] bg-center bg-cover bg-no-repeat hidden desktop:flex rounded-3xl
 }
+
+.about-top {
+    background: url(/Images/itpa33.JPG);
+    border: 1px solid blue;
+    @apply w-[80%] h-[60vh] mt-[2rem] rounded-3xl bg-no-repeat bg-center bg-cover
+}
+
+.about-top-overlay {
+    background: rgba(53, 53, 93, 0.7);
+
+    @apply h-[100%] w-[100%] flex flex-col justify-center items-center desktop:items-center desktop:pl-[0rem] px-[1rem] text-start desktop:text-center
+}
+
+.about-top-overlay h1 {
+    font-family: "sora," sans-serif;
+    @apply text-[white] text-[2rem] desktop:text-[3rem] font-bold
+}
+
+.statement-cards{
+    @apply flex desktop:flex-row w-[80%] justify-evenly items-center my-[3rem] flex-col gap-[1.5rem]
+}
+

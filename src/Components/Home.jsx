@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from 'react'
-
+import React, { useEffect, useRef } from 'react'
 import rocket from "../assets/Icons/rocket.svg"
 import vision from "../assets/Icons/vision.svg"
 import call from "../assets/Icons/cal.svg"
@@ -12,6 +11,12 @@ import AOS from 'aos';
 import nasa from "/Images/nasa.jpg"
 import tech from "/Images/tech.jpg"
 
+
+
+
+
+
+
 import 'aos/dist/aos.css'; // Import the CSS
 // import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -20,92 +25,137 @@ import "./Home.css"
 import { Link } from 'react-router-dom'
 import imagesData from './Data'; // Adjust the path based on your project structure
 import GalleryCarousel from './GalleryCarousel'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 
 
 const Home = () => {
+     const membersRef = useRef(null);
+     const serviceYearsRef = useRef(null);
+     const awardsRef = useRef(null);
 
-     const images = [
-          'nasa',
-          'tech',
-          'nasa',
-          'tech',
-          'nasa',
-          'tech',
+     const animateCount = (target, endValue) => {
+          let startValue = 0;
+          const duration = 2000;
+          const increment = Math.ceil(endValue / (duration / 20)); // Adjust the increment for smoother animation
+
+          const updateCount = () => {
+               if (startValue <= endValue) {
+                    target.innerText = startValue;
+                    startValue += increment;
+                    setTimeout(updateCount, 20);
+               }
+          };
+
+          updateCount();
+     };
+
+     const handleIntersection = (entry, target, endValue) => {
+          if (entry.isIntersecting) {
+               animateCount(target.querySelector('.count'), endValue);
+          }
+     };
+
+     useEffect(() => {
+          const membersObserver = new IntersectionObserver((entries) => handleIntersection(entries[0], membersRef.current, 5000), {
+               threshold: 0.5,
+          });
+
+          const serviceYearsObserver = new IntersectionObserver((entries) => handleIntersection(entries[0], serviceYearsRef.current, 10), {
+               threshold: 0.5,
+          });
+
+          const awardsObserver = new IntersectionObserver((entries) => handleIntersection(entries[0], awardsRef.current, 10), {
+               threshold: 0.5,
+          });
+
+          membersObserver.observe(membersRef.current);
+          serviceYearsObserver.observe(serviceYearsRef.current);
+          awardsObserver.observe(awardsRef.current);
+
+          // Clean up observers
+          return () => {
+               membersObserver.disconnect();
+               serviceYearsObserver.disconnect();
+               awardsObserver.disconnect();
+          };
+     }, []);
+
+
+     useEffect(() => {
+          const handleScroll = () => {
+               const scrollY = window.scrollY;
+               console.log('Scroll Y Position:', scrollY);
+          };
+
+          window.addEventListener('scroll', handleScroll);
+
+          return () => {
+               window.removeEventListener('scroll', handleScroll);
+          };
+     }, []);
+
+     useEffect(() => {
+          AOS.init({
+               duration: 3000, // Set the default duration to 3000ms (3 seconds)
+          });
+     }, []);
 
 
 
-     ]
 
      return (
           <PageLayout>
 
                <div className="Home-first" >
-                    <div className="home-first-overlay">
 
-                         <div className="home-big-text">
 
-                              <h1>
-                                   INFORMATION TECHNOLOGY PROFESSIONALS ASSOCIATION
+                    <div className="Home-container">
 
-                              </h1>
+
+
+
+                         <div className="home-first-overlay">
+
+                              <div data-aos="fade-up" className="home-big-text">
+
+                                   <h1>
+                                        INFORMATION TECHNOLOGY PROFESSIONALS ASSOCIATION
+
+                                   </h1>
+                              </div>
+
+                              <p data-aos="fade-up" className="home-text-motto">
+                                   Welcome to ITPA – together, we shape the future of technology! Connecting, Empowering, and Advancing IT Professionals Worldwide
+                              </p>
+                              {/* 
+                              <button className="home-explore">
+                                   Learn More
+                              </button> */}
+
+
                          </div>
-
-                         <p className="home-text-motto">
-                              Welcome to ITPA – together, we shape the future of technology! Connecting, Empowering, and Advancing IT Professionals Worldwide
-                         </p>
-
-                         <button className="home-explore">
-                              Learn More
-                         </button>
-
-
                     </div>
 
 
                </div>
-
-
                <div className="home-stats">
-                    <div>
-                         <h2 className='text-[#3241e7]' >5000+</h2>
+                    <div data-aos="fade-up" ref={membersRef}>
+                         <h2 className='text-[#3241e7]'><span className="count">0</span>+</h2>
                          <h3>members world-wide</h3>
                     </div>
-                    <div>
-                         <h2 className='text-yellow-300' >10+</h2>
+                    <div data-aos="fade-up" data-aos-delay="900" ref={serviceYearsRef}>
+                         <h2 className='text-yellow-300'><span className="count">0</span>+</h2>
                          <h3>years of service</h3>
                     </div>
-                    <div>
-                         <h2>5+</h2>
+                    <div data-aos="fade-up" data-aos-delay="1100" ref={awardsRef}>
+                         <h2><span className="count">0</span>+</h2>
                          <h3>Awards</h3>
                     </div>
-
-
                </div>
 
-               <div className="vision-mision">
-
-
-                    <div className="our-mission">
-
-                         <div className="mission-head">
-
-                              <h1 className="text">
-                                   OUR MISSION
-                              </h1>
-                              <img src={rocket} alt="" className='rocket' />
-                         </div>
-
-
-                         <p>
-                              "Coalition of Information and Communication Technology Professionals for Societal Development."
-                         </p>
-
-
-
-                    </div>
-
-
-               </div>
 
 
 
@@ -116,22 +166,20 @@ const Home = () => {
 
 
 
-                         <h1>
+                         <h1 data-aos="fade-up">
                               About ITPA
                          </h1>
 
 
-                         <p>The Information Technology Professionals Association (ITPA) is a global association that connects, empowers, and advances IT professionals worldwide. With over 5,000 members organized in zones spread across different states and countries, ITPA provides a platform for IT professionals to network, learn, and grow</p>
+                         <p data-aos="fade-up">The Information Technology Professionals Association (ITPA) is a global association that connects, empowers, and advances IT professionals worldwide. With over 5,000   members organized in zones spread across different states and countries, ITPA provides a platform for IT professionals to network, learn, and grow</p>
 
 
 
-                         <button>
-
+                         <button data-aos="fade-up" className='see-more' >
                               <Link to="/About" >
-                                   read more...
-                              </Link>
+                                   see more ..
 
-                         </button>
+                              </Link>                         </button>
 
 
 
@@ -142,42 +190,122 @@ const Home = () => {
                </div>
 
 
-               <div className="our-vision">
 
-                    <div className="vision-head">
+               <div className="service-dept">
 
-                         <h1>Our Vision</h1>
-                         <img src={vision} alt="" className="vision" />
+
+                    <h1 data-aos="fade-up" className="service-dept-header">
+                         Services
+                    </h1>
+
+
+                    <div className="services-sect">
+
+                         <div data-aos="fade-up" className="service-divo ">
+
+                              <div className="service-div-overlay">
+                                   <h1 data-aos="fade-up" data-aos-delay="1400" className="se">
+                                        Promoting  Technology
+                                   </h1>
+                              </div>
+
+
+                         </div>
+                         <div data-aos="fade-up" data-aos-delay="1100" className="service-divt">
+                              <div className="service-div-overlay">
+                                   <h1 data-aos="fade-up" data-aos-delay="1500" className="se">
+                                        Extending The Tech Ecosystem
+                                   </h1>
+                              </div>
+
+                         </div>
+                         <div data-aos="fade-up" data-aos-delay="1200" className="service-divth">
+                              <div className="service-div-overlay">
+                                   <h1 data-aos="fade-up" data-aos-delay="1600" className="se">
+                                        Inovation
+                                   </h1>
+                              </div>
+
+                         </div>
+                         <div data-aos="fade-up" data-aos-delay="1300" className="service-div">
+                              <div className="service-div-overlay">
+                                   <h1 data-aos="fade-up" data-aos-delay="1700" className="se">
+                                        Innovative Trainings
+                                   </h1>
+                              </div>
+                         </div>
+
 
                     </div>
+               </div>
 
-                    <p>
-                         Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
+
+
+               <div className="trusted-by">
+                    <h1 data-aos="fade-up" className="trusted-header">
+                         Trusted By
+                    </h1>
+
+                    <section className="trusted-container">
+
+                         <img data-aos="fade-up" src="/Images/kwirs.jpeg" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/ksg.jpeg" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/kwasca.jpeg" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/btech.png" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/spassion.jpeg" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/printhub.png" alt="" className="trusted-logo" />
+
+
+
+                    </section>
+               </div>
+
+
+
+
+
+
+
+
+
+
+               <section className="contact-section">
+
+                    <h1 data-aos="fade-up"  >Contact US    <img data-aos="fade-up" src={call} alt="" className='rocket' />  </h1>
+                    <p data-aos="fade-up">
+                         Have questions, suggestions, or just want to say hello? We'd love to hear from you! Our team is ready to assist you with anything you need. Feel free to reach out through the contact form or find our contact details below.
+
                     </p>
 
 
-               </div>
+
+                    <button data-aos="fade-up" className='see-more' >
+                         <Link to="/Contact" >
+
+                              Contact us
+                         </Link>
+                    </button>
+
+
+               </section>
+
 
 
                <section className="Gallery">
 
-                    <h1 className="gallery-head">
+                    <h1 data-aos="fade-up" className="gallery-head">
                          Check our Gallery
                     </h1>
 
 
-                    <section className="gallery-container">
+                    <section data-aos="fade-up" className="gallery-container">
 
 
-                         {/* {imagesData.map((data, index) => {
-                              return (
-                                   <div key={index} >
-                                        {console.log(data)}
-                                        <GalleryCarousel images={data} />
-
-                                   </div>
-                              )
-                         })} */}
 
                          <GalleryCarousel images={imagesData} />
 
@@ -185,7 +313,7 @@ const Home = () => {
 
                     </section>
 
-                    <button className='see-more' >
+                    <button data-aos="fade-up" className='see-more' >
                          <Link to="/Gallery" >
                               see more ..
 
@@ -196,12 +324,12 @@ const Home = () => {
 
 
                <div className="events">
-                    <h2>Upcoming Events    <img src={event} alt="" className='rocket' />   </h2>
-                    <p>
+                    <h2 data-aos="fade-up">Upcoming Events    <img src={event} alt="" className='rocket' />   </h2>
+                    <p data-aos="fade-up" >
                          The ITPA Event Calendar lists upcoming events and webinars hosted by ITPA and its chapters. These events cover a wide range of topics, from technical skills training to career development to networking opportunities.
                     </p>
 
-                    <button className='see-more' >
+                    <button data-aos="fade-up" className='see-more' >
                          <Link to="/Event" >
 
 
@@ -212,24 +340,6 @@ const Home = () => {
                </div>
 
 
-               <section className="contact-section">
-
-                    <h1>Contact US    <img src={call} alt="" className='rocket' />  </h1>
-                    <p>
-                         The ITPA Contact page provides contact information for the ITPA National Office and its chapters. Visitors can also use this page to submit a general inquiry to ITPA.
-                    </p>
-
-
-
-                    <button className='see-more' >
-                         <Link to="/Contact" >
-
-                              Contact us
-                         </Link>
-                    </button>
-
-
-               </section>
 
 
 

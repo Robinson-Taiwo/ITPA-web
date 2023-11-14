@@ -3,21 +3,25 @@
 .gallery-carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 80%;
     /* Adjust the maximum width as needed */
     margin: 20px auto;
     overflow: hidden;
+    @apply desktop:h-[100%] desktop:max-w-[80%] wide:max-w-[60%]
 }
 
 .gallery-main-slide {
-    width: 90%;
+    width: 100%;
     transition: transform 0.5s ease;
-    @apply items-center justify-center flex flex-row  pl-[10%] h-[30vh]
+    border: 1px solid #3128ec;
+    @apply items-center justify-center flex flex-row wide:h-[60vh] desktop:h-[50vh] rounded-2xl
 }
 
 .gallery-main-slide img {
     width: 100%;
     height: auto;
+    border: 2px solid rgba(0, 26, 255, 0.504)(0, 26, 255);
+    @apply rounded-[0.25rem] h-[100%]
 }
 
 .gallery-thumbnails {
@@ -68,3 +72,6 @@
 .carousel-buttons div {
     @apply flex items-center justify-center h-[100%] mt-[0rem] pt-[0rem]
 }
+
+
+

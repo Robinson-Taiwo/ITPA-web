@@ -1,0 +1,10 @@
+.events-containerl{
+    @apply h-[80vh] w-[100vw] flex flex-col items-center justify-center
+}
+
+
+
+.events-containerl h1{
+    font-family: "sora" sans-serif;
+    @apply py-[3rem] w-[100%] flex items-center justify-center text-[2rem] desktop:text-[3rem] font-bold text-[#213e8c] text-center 
+}

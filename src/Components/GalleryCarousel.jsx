@@ -38,7 +38,7 @@ const GalleryCarousel = () => {
             <div className="gallery-main-slide">
                 <img src={imagesData[currentImageIndex].url} alt={imagesData[currentImageIndex].alt} />
             </div>
-            <div className="gallery-thumbnails">
+            {/* <div className="gallery-thumbnails">
                 {imagesData.map((image, index) => (
                     <div
                         key={image.id}
@@ -48,8 +48,8 @@ const GalleryCarousel = () => {
                         <img src={image.url} alt={image.alt} />
                     </div>
                 ))}
-            </div>
-            <div className="carousel-buttons">
+            </div> */}
+            {/* <div className="carousel-buttons">
                 <button className="carousel-button prev" onClick={prevImage}>
                     &#10094;
                 </button>
@@ -58,10 +58,8 @@ const GalleryCarousel = () => {
                 </button>
 
 
-                {/* <button className="autoplay-button" onClick={toggleAutoplay}>
-                    {isAutoplayEnabled ? 'Pause Autoplay' : 'Start Autoplay'}
-                </button> */}
-            </div>
+               
+            </div> */}
         </div>
     );
 };

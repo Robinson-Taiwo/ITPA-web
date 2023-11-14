@@ -1,0 +1,24 @@
+.mission-card {
+    border: 1px solid blue;
+    transition: background-color 0.3s ease;
+    /* Transition the background color over 0.3 seconds */
+
+    @apply h-[30vh] desktop:w-[20vw] items-center flex justify-center flex-col relative rounded-3xl
+}
+
+.mission-card h1 {
+    @apply text-[2rem] font-bold
+}
+
+.mission-card:hover {
+    transition: 0.3 ease-in;
+    @apply bg-[#213e8c] text-white
+}
+
+.mission-card p {
+    @apply desktop:absolute desktop:opacity-0 w-[80%] h-[60%] pb-[1rem]
+}
+
+.mission-card p:hover {
+    @apply opacity-100 static
+}

@@ -10,26 +10,39 @@
 
 
 .Home-first {
+    @apply h-[100%] w-[100vw] flex items-center justify-center pt-[3rem]
+}
+
+
+.Home-container {
     /* 
         background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%), url(/images/background-image-1.jpg); */
-    background-image: url(/Images/test-bg.jpg);
+    background-image: url(/Images/itpa7.JPG);
     background-position: center;
     /* transition: background-image 1s ease; */
     background-size: cover;
     background-repeat: no-repeat;
     /* animation: changeBackgroundImage 10s infinite cubic-bezier(0.165, 0.84, 0.44, 1); */
 
-    @apply h-[60vh] desktop:h-[80vh] bg-center bg-cover bg-no-repeat mb-[3rem] overflow-hidden
+    @apply h-[60vh] desktop:h-[80vh] bg-center bg-cover bg-no-repeat mb-[3rem] overflow-hidden desktop:w-[80%] w-[90%] rounded-3xl
 }
+
 
 
 .home-first-overlay {
-    background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%);
-    @apply h-[100%] w-[100%] flex flex-col justify-center items-center desktop:items-start desktop:pl-[5rem] px-[1rem] text-start
+    z-index: 100;
+    /* background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(97, 97, 218, 0.8) 0%); */
+
+    background: rgba(53, 53, 93, 0.7);
+
+    @apply h-[100%] w-[100%] flex flex-col justify-center items-center desktop:items-center desktop:pl-[0rem] px-[1rem] text-start desktop:text-center
 }
 
 .home-first-overlay h1 {
-    @apply text-[1.78rem] text-white font-bold desktop:text-[3rem] desktop:w-[80%] wide:w-[70%]
+    font-family: 'Sora', sans-serif;
+
+    z-index: 1000;
+    @apply text-[1.78rem] text-white font-bold desktop:text-[2.5rem] desktop:w-[100%] wide:w-[100%]
 }
 
 .home-first-overlay div {
@@ -37,7 +50,9 @@
 }
 
 .home-first-overlay p {
-    @apply text-[white] text-[0.8rem] font-medium desktop:text-[1.2rem] text-start mt-[1rem] pr-[1.5rem] desktop:w-[70%] wide:w-[50%]
+    font-family: 'Sora', sans-serif;
+
+    @apply text-[white] text-[0.8rem] font-light desktop:text-[1.2rem] text-start mt-[1rem] pr-[1.5rem] desktop:w-[70%] wide:w-[50%] desktop:text-center
 }
 
 
@@ -123,7 +138,7 @@ button:hover {
 }
 
 .home-stats h2 {
-    @apply text-[1.3rem] font-bold
+    @apply text-[1.3rem] font-bold desktop:text-[2.5rem]
 }
 
 .home-stats div:nth-of-type(2) h2 {
@@ -135,7 +150,7 @@ button:hover {
 }
 
 .home-stats div h3 {
-    @apply text-[0.8rem] font-medium text-blue
+    @apply text-[0.8rem] font-medium text-blue desktop:text-[1.2rem]
 }
 
 
@@ -188,7 +203,7 @@ button:hover {
 
 .about-section {
     /* background-image: url(../assets/Images/tech.jpg); */
-    @apply bg-center bg-cover bg-no-repeat h-fit bg-[#213e8c] mt-[1rem] w-[100%] flex justify-center items-center flex-col
+    @apply bg-center bg-cover bg-no-repeat h-fit mt-[1rem] w-[100%] flex justify-center items-center flex-col
 }
 
 .about-overlay {
@@ -197,26 +212,18 @@ button:hover {
 }
 
 .about-overlay h1 {
-    font-family: 'Courgette', cursive;
+    font-family: 'sorta', sans-serif;
 
-    @apply text-white text-[2rem] font-bold mb-[1rem] mt-[1rem]
+    @apply text-[#213e8c] text-[2.5rem] font-bold mb-[1rem] mt-[1rem]
 }
 
 .about-overlay p {
-    font-family: 'Courgette', cursive;
+    font-family: 'sorta', sans-serif;
 
-    @apply text-[white] text-center mb-[1rem] leading-8 desktop:w-[70%]
+    @apply text-[black] text-center mb-[1rem] leading-8 desktop:w-[70%] desktop:text-[1.2rem] font-light leading-10
 }
 
-.about-overlay button {
-    border: 1px solid white;
-    cursor: pointer;
-    transition: color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    /* White box shadow */
 
-    @apply bg-transparent rounded-full text-white px-[1.9rem] py-[0.9rem] mb-[2rem] text-[1rem]
-}
 
 .kwac {
     background-image: url(/Images/kwac.webp);
@@ -242,8 +249,8 @@ button:hover {
 }
 
 .gallery-head {
-    font-family: 'Edu TAS Beginner';
-    @apply text-[2rem] font-bold py-[1rem] text-[#213e8c]
+    font-family: "sorta", sans-serif;
+    @apply text-[2rem] font-bold py-[1rem] text-[#213e8c] desktop:text-[3rem]
 }
 
 
@@ -274,13 +281,15 @@ button:hover {
 }
 
 .see-more {
-    border: 1px solid #213e8c;
+    /* border: 1px solid #213e8c; */
     cursor: pointer;
     transition: color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px #213e8c;
+    box-shadow: 0 0 10px white;
+    font-family: 'Sora', sans-serif;
+
     /* White box shadow */
 
-    @apply bg-[#213e8c] bg-opacity-5 rounded-full text-[#213e8c] px-[1.9rem] py-[0.9rem] mb-[2rem] text-[0.8rem] desktop:text-[1rem] mt-[2rem] font-semibold hover:text-white
+    @apply bg-[#213e8c] text-[white] px-[2.4rem] py-[1.1rem] mb-[2rem] text-[0.8rem] desktop:text-[1rem] mt-[2rem] font-medium rounded-lg hover:text-white
 }
 
 .events, .contact-section {
@@ -288,20 +297,20 @@ button:hover {
 }
 
 .events h2 {
-    font-family: 'Edu TAS Beginner';
+    font-family: 'Sora', sans-serif;
 
-    @apply text-[2rem] desktop:text-[2.5rem] font-bold text-[#213e8c] flex-row flex w-[100%] items-center justify-center mb-[0.5rem]
+    @apply text-[1.5rem] desktop:text-[2.5rem] font-bold text-[#213e8c] flex-row flex w-[100%] items-center justify-center mb-[0.5rem]
 }
 
 .contact-section h1 {
-    font-family: 'Edu TAS Beginner';
-    @apply text-[2rem] desktop:text-[2.5rem] font-bold text-[#213e8c] flex-row flex w-[100%] items-center justify-center mb-[0.5rem]
+    font-family: 'Sora', sans-serif;
+    @apply text-[2rem] desktop:text-[2rem] font-bold text-[#213e8c] flex-row flex w-[100%] items-center justify-center mb-[0.5rem]
 }
 
 .events p, .contact-section p {
-    font-family: 'Edu TAS Beginner';
+    font-family: 'Sora', sans-serif;
 
-    @apply text-[1rem] desktop:text-[1rem] font-medium w-[80%] text-center
+    @apply text-[1rem] desktop:text-[1rem] font-light w-[60%] text-center leading-10
 }
 
 
@@ -335,67 +344,6 @@ button:hover {
 
 }
 
-/* li {
-  display: inline-block;
-  margin-right: 5px;
-
-  
-} */
-/* button {
-  background-color: #ccc;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
-&.active button {
-  background-color: #333;
-} */
-/* 
-.carousel-item-padding-40-px {
-    padding: 0 20px;
-}
-
-
-.multi-carousel {
-    width: 100%;
-    height: 300px;
-}
-
-.multi-carousel__item {
-    width: 33.33%;
-    height: 100%;
-    float: left;
-}
-
-.multi-carousel__item img {
-    width: 100%;
-    height: 100%;
-}
-
-@media (max-width: 576px) {
-    .multi-carousel {
-        width: 100%;
-        height: auto;
-    }
-
-    .multi-carousel__item {
-        width: 100%;
-        height: auto;
-    }
-} */
-
-/* @media (min-width: 1024px) {
-    .laptop {
-      width: 1200px;
-      height: 600px;
-    }
-  } */
-
-/* .multi-carousel {
-  }
-   */
 
 .slick-dots li button {
     font-size: 12px;
@@ -405,4 +353,71 @@ button:hover {
     background-color: #ccc;
     border: none;
     cursor: pointer;
+}
+
+.service-dept {
+    @apply flex justify-center w-[100%] items-center flex-col mb-[2rem]
+}
+
+
+
+.services-sect {
+    @apply flex flex-col desktop:flex-row desktop:justify-evenly items-center w-[80%] gap-[1rem]
+}
+
+.service-divo {
+    background: url(/Images/itpa18.JPG);
+    @apply h-[45vh] wide:w-[20rem] desktop:w-[12rem] w-[100%] rounded-2xl bg-center bg-cover bg-no-repeat
+}
+
+.service-divt {
+    background: url(/Images/itpa20.JPG);
+
+    @apply h-[45vh] wide:w-[20rem] desktop:w-[12rem] w-[100%] rounded-2xl bg-center bg-cover bg-no-repeat
+}
+
+.service-divth {
+    background: url(/Images/itpa24.JPG);
+
+    @apply h-[45vh] wide:w-[20rem] desktop:w-[12rem] w-[100%] rounded-2xl bg-center bg-cover bg-no-repeat
+}
+
+.service-div {
+    background: url(/Images/itpa25.JPG);
+    @apply h-[45vh] wide:w-[20rem] desktop:w-[12rem] w-[100%] rounded-2xl desktop:h-[45vh] bg-center bg-cover bg-no-repeat
+}
+
+.service-div-overlay {
+    background: rgba(53, 53, 93, 0.7);
+    @apply h-[100%] w-[100%] flex items-end
+}
+
+.se {
+    font-family: "sorta", sans-serif;
+    @apply text-white font-semibold w-[100%] flex flex-row justify-center items-center text-[1.8rem] p-[1.5rem]
+}
+
+.service-dept-header {
+    font-family: "sorta", sans-serif;
+
+    @apply text-[2rem] font-bold text-[#213e8c] desktop:text-[3rem] mb-[2rem]
+}
+
+.trusted-by {
+    @apply w-[100%] items-center flex-col flex justify-center mt-[2rem]
+}
+
+.trusted-header {
+    font-family: "sorta", sans-serif;
+
+    @apply text-[2rem] desktop:text-[3rem] font-bold text-[#312e8c] mb-[2rem]
+}
+
+.trusted-container {
+    @apply grid grid-cols-3 w-[100%] desktop:px-[10%] gap-y-[2rem] wide:px-[25rem] mb-[3rem]
+}
+
+
+.trusted-container img {
+    @apply wide:h-[14.25rem] wide:w-[14.25rem] desktop:h-[12.25rem] desktop:w-[12.25rem] h-[7.25rem] w-[7.25rem]
 }
