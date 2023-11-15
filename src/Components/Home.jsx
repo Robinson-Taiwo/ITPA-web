@@ -10,8 +10,8 @@ import PageLayout from './PageLayout'
 import AOS from 'aos';
 import nasa from "/Images/nasa.jpg"
 import tech from "/Images/tech.jpg"
-import video from "/Images/connectedo.mp4"
-import net from "/Images/connect.mp4"
+// import video from "/Images/connectedo.mp4"
+// import net from "/Images/connect.mp4"
 
 // import net from "/Images/tst.mp4"
 
