@@ -99,7 +99,8 @@ const Home = () => {
 
      useEffect(() => {
           AOS.init({
-               duration: 3000, // Set the default duration to 3000ms (3 seconds)
+               offset: 100,
+               duration: 1000, // Adjust the duration (in milliseconds)
           });
      }, []);
 
