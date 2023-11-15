@@ -10,6 +10,12 @@ import PageLayout from './PageLayout'
 import AOS from 'aos';
 import nasa from "/Images/nasa.jpg"
 import tech from "/Images/tech.jpg"
+import video from "/Images/connectedo.mp4"
+import net from "/Images/connect.mp4"
+
+// import net from "/Images/tst.mp4"
+
+
 
 
 
@@ -84,22 +90,10 @@ const Home = () => {
      }, []);
 
 
-     useEffect(() => {
-          const handleScroll = () => {
-               const scrollY = window.scrollY;
-               console.log('Scroll Y Position:', scrollY);
-          };
-
-          window.addEventListener('scroll', handleScroll);
-
-          return () => {
-               window.removeEventListener('scroll', handleScroll);
-          };
-     }, []);
 
      useEffect(() => {
           AOS.init({
-               offset: 100,
+               offset: 50,
                duration: 1000, // Adjust the duration (in milliseconds)
           });
      }, []);
@@ -116,28 +110,46 @@ const Home = () => {
                     <div className="Home-container">
 
 
+                         {/* <video autoPlay loop muted>
+                              <source
+                                   src={net}
+                                   type="video/mp4"
+                                   media="(min-width: 768px)"
+                              />
+                              <source
+                                   src={video}
+                                   type="video/mp4"
+                                   media="(max-width: 767px)"
+                              />
+
+  <source src="video-1920x1080.mp4" type="video/mp4" media="(min-width: 1200px)"/>
+  <source src="video-1024x768.mp4" type="video/mp4" media="(min-width: 768px)"/>
+  <source src="video-720x480.mp4" type="video/mp4" media="(max-width: 767px)"/>
+
+                              Your browser does not support the video tag.
+                         </video> */}
+                         {/* Add other content over the video as needed */}
+                              <div className="home-first-overlay">
+
+                                   <div data-aos="fade-up" className="home-big-text">
+
+                                        <h1>
+                                             INFORMATION TECHNOLOGY PROFESSIONALS ASSOCIATION
+
+                                        </h1>
+                                   </div>
+
+                                   <p data-aos="fade-up" className="home-text-motto">
+                                        Welcome to ITPA – together, we shape the future of technology! Connecting, Empowering, and Advancing IT Professionals Worldwide
+                                   </p>
 
 
-                         <div className="home-first-overlay">
 
-                              <div data-aos="fade-up" className="home-big-text">
 
-                                   <h1>
-                                        INFORMATION TECHNOLOGY PROFESSIONALS ASSOCIATION
-
-                                   </h1>
                               </div>
+                         {/* <div className="content">
+                         </div> */}
 
-                              <p data-aos="fade-up" className="home-text-motto">
-                                   Welcome to ITPA – together, we shape the future of technology! Connecting, Empowering, and Advancing IT Professionals Worldwide
-                              </p>
-                              {/* 
-                              <button className="home-explore">
-                                   Learn More
-                              </button> */}
-
-
-                         </div>
                     </div>
 
 
@@ -156,6 +168,10 @@ const Home = () => {
                          <h3>Awards</h3>
                     </div>
                </div>
+
+
+
+
 
 
 
@@ -255,11 +271,18 @@ const Home = () => {
 
                          <img data-aos="fade-up" src="/Images/kwasca.jpeg" alt="" className="trusted-logo" />
 
-                         <img data-aos="fade-up" src="/Images/btech.png" alt="" className="trusted-logo" />
+                         <img data-aos="fade-up" src="/Images/police.jpeg" alt="" className="trusted-logo" />
 
-                         <img data-aos="fade-up" src="/Images/spassion.jpeg" alt="" className="trusted-logo" />
+                         <img data-aos="fade-up" src="/Images/nitda.jpeg" alt="" className="trusted-logo" />
 
-                         <img data-aos="fade-up" src="/Images/printhub.png" alt="" className="trusted-logo" />
+                         <img data-aos="fade-up" src="/Images/kwartma.jpeg" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/fmc.jpeg" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/itpa.jpeg" alt="" className="trusted-logo" />
+                         <img data-aos="fade-up" src="/Images/coa.jpeg" alt="" className="trusted-logo" />
+
+                         <img data-aos="fade-up" src="/Images/civil.jpeg" alt="" className="trusted-logo" />
 
 
 

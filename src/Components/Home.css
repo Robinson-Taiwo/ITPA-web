@@ -17,14 +17,14 @@
 .Home-container {
     /* 
         background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 0%), url(/images/background-image-1.jpg); */
-    background-image: url(/Images/itpa7.JPG);
+    background-image: url(/Images/bgb.jpg);
     background-position: center;
     /* transition: background-image 1s ease; */
     background-size: cover;
     background-repeat: no-repeat;
     /* animation: changeBackgroundImage 10s infinite cubic-bezier(0.165, 0.84, 0.44, 1); */
 
-    @apply h-[60vh] desktop:h-[80vh] bg-center bg-cover bg-no-repeat mb-[3rem] overflow-hidden desktop:w-[80%] w-[90%] rounded-3xl
+    @apply h-[60vh] desktop:h-[80vh] bg-center bg-cover bg-no-repeat mb-[3rem] overflow-hidden desktop:w-[80%] w-[90%] rounded-3xl relative aspect-auto
 }
 
 
@@ -371,7 +371,7 @@ button:hover {
 }
 
 .service-divt {
-    background: url(/Images/itpa20.JPG);
+    background-image: url(/Images/itpa20.JPG);
 
     @apply h-[45vh] wide:w-[20rem] desktop:w-[12rem] w-[100%] rounded-2xl bg-center bg-cover bg-no-repeat
 }
@@ -414,10 +414,61 @@ button:hover {
 }
 
 .trusted-container {
-    @apply grid grid-cols-3 w-[100%] desktop:px-[10%] gap-y-[2rem] wide:px-[25rem] mb-[3rem]
+    @apply grid grid-cols-5 w-fit desktop:px-[10%] gap-y-[2rem] wide:px-[25rem] mb-[3rem] gap-x-[0.5rem] desktop:gap-x-[2rem] wide:gap-x-[3rem] wide:w-[100%] tablet:w-[80%] tablet:ml-[1.5rem] desktop:ml-[0rem] desktop:w-[80%]
 }
 
 
 .trusted-container img {
-    @apply wide:h-[14.25rem] wide:w-[14.25rem] desktop:h-[12.25rem] desktop:w-[12.25rem] h-[7.25rem] w-[7.25rem]
+    @apply wide:h-[9.25rem] wide:w-[9.25rem] desktop:h-[6.25rem] desktop:w-[6.25rem] h-[3.25rem] w-[3.25rem]
+}
+
+
+
+
+
+/* VideoBackground.css */
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* @media (min-aspect-ratio: 16/9) {
+    video {
+        @apply w-[100%] h-auto
+    }
+}
+
+
+
+@media (max-aspect-ratio: 16/9) {
+    video {
+        @apply w-auto h-[100%]
+    }
+} */
+
+video {
+    width: 100%;
+    height: auto;
+    /* aspect-ratio: 1 / 1; */
+
+    /* Make the video cover the container while maintaining its aspect ratio */
+    object-position: center center;
+    /* Center the video content within the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    /* Adjust text color as needed */
+    @apply h-[100%] w-[100%]
 }

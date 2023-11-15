@@ -27,12 +27,14 @@
 
 
 .navbar-button {
+    
     width: 9.5625rem;
     height: 2.625rem;
-
     border-radius: 0.625rem;
     border: 1px solid white;
+    
     @apply flex items-center justify-center text-[white] text-[1.125rem] font-bold
+
 }
 
 
