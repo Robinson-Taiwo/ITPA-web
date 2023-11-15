@@ -54,7 +54,7 @@ const Footer = () => {
             <Link to="/About" >About</Link>
           </p>
           <p>
-            <Link to="/Eventnpm run dev" >Events</Link>
+            <Link to="/Event" >Events</Link>
 
           </p>
           <p>
