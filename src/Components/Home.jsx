@@ -279,7 +279,7 @@ const Home = () => {
 
                          <img data-aos="fade-up" src="/Images/fmc.jpeg" alt="" className="trusted-logo" />
 
-                         <img data-aos="fade-up" src="/Images/itpa.jpeg" alt="" className="trusted-logo" />
+                         <img data-aos="fade-up" src="/Images/optics.jpeg" alt="" className="trusted-logo" />
                          <img data-aos="fade-up" src="/Images/coa.jpeg" alt="" className="trusted-logo" />
 
                          <img data-aos="fade-up" src="/Images/civil.jpeg" alt="" className="trusted-logo" />
