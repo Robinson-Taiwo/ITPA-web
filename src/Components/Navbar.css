@@ -76,7 +76,7 @@
 
 .menu-item {
 
-    @apply text-[1.125rem] font-medium tracking-[-0.0625rem] desktop:font-normal desktop:text-[white] desktop:text-[1.25rem]
+    @apply text-[1.125rem] font-medium tracking-[-0.0625rem] desktop:font-normal desktop:text-[white] desktop:text-[1.25rem] desktop:px-[0.5rem]
 }
 
 .menu-register {
