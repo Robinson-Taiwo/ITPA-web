@@ -3,6 +3,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react'
 import rocket from "../assets/Icons/rocket.svg"
+import whatsapp from "../assets/Icons/whatsapp.svg"
+
 import vision from "../assets/Icons/vision.svg"
 import call from "../assets/Icons/cal.svg"
 import event from "../assets/Icons/event.svg"
@@ -129,24 +131,24 @@ const Home = () => {
                               Your browser does not support the video tag.
                          </video> */}
                          {/* Add other content over the video as needed */}
-                              <div className="home-first-overlay">
+                         <div className="home-first-overlay">
 
-                                   <div data-aos="fade-up" className="home-big-text">
+                              <div data-aos="fade-up" className="home-big-text">
 
-                                        <h1>
-                                             INFORMATION TECHNOLOGY PROFESSIONALS ASSOCIATION
+                                   <h1>
+                                        INFORMATION TECHNOLOGY PROFESSIONALS ASSOCIATION
 
-                                        </h1>
-                                   </div>
-
-                                   <p data-aos="fade-up" className="home-text-motto">
-                                        Welcome to ITPA – together, we shape the future of technology! Connecting, Empowering, and Advancing IT Professionals Worldwide
-                                   </p>
-
-
-
-
+                                   </h1>
                               </div>
+
+                              <p data-aos="fade-up" className="home-text-motto">
+                                   Welcome to ITPA – together, we shape the future of technology! Connecting, Empowering, and Advancing IT Professionals Worldwide
+                              </p>
+
+
+
+
+                         </div>
                          {/* <div className="content">
                          </div> */}
 
@@ -361,10 +363,18 @@ const Home = () => {
                          </Link>
                     </button>
 
+
+
                </div>
 
 
-
+               <div className="floating-whatsapp">
+                    {/* WhatsApp icon or button */}
+                    <a href="https://api.whatsapp.com/send?phone=08088704731" target="_blank" rel="noopener noreferrer">
+                         {/* You can use an SVG or an image for the WhatsApp icon */}
+                         <img src={whatsapp} alt="WhatsApp" />
+                    </a>
+               </div>
 
 
           </PageLayout>

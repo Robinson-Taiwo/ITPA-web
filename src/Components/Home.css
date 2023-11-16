@@ -472,3 +472,34 @@ video {
     /* Adjust text color as needed */
     @apply h-[100%] w-[100%]
 }
+
+
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .floating-whatsapp a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; 
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .floating-whatsapp a:hover {
+    background-color: #128c7e; 
+  }
+  
+  .floating-whatsapp img {
+    width: 100%;
+    height: auto;
+  }
+  

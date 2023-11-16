@@ -58,7 +58,7 @@
     @apply min-h-screen top-0 w-[100vw] fixed bg-[#213e8c] opacity-100 left-0 flex-col text-[white] pl-[2.94rem] desktop:flex-row;
     overflow-y: auto;
     /* Enable vertical scrolling when content exceeds viewport */
-    z-index: 1000;
+    z-index: 2000;
     /* Set a higher z-index value */
 }
 

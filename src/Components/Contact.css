@@ -94,24 +94,34 @@
 }
 
 .contacts-first-div h1 {
-    @apply desktop:text-[2rem] font-semibold text-[#213e8c]
+    font-family: 'sora', sans-serif;
+
+    @apply desktop:text-[2.4rem] font-semibold text-[#213e8c]
 }
 
 .contacts-first-div h2 {
-    @apply desktop:w-fit text-black font-medium w-[100%] flex justify-center
+    font-family: 'sora', sans-serif;
+
+    @apply desktop:w-fit text-black desktop:text-[2rem] font-medium w-[100%] flex justify-center
 }
 
 .contacts-first-div h3 {
-    @apply desktop:w-[7.43rem] text-black
+    font-family: 'sora', sans-serif;
+
+    @apply desktop:w-[60%] text-black desktop:text-[1.1rem] font-light text-center w-[60%]
 }
 
 .contacts-first-div h4 {
-    @apply desktop:w-[10.693rem] text-black flex justify-center items-center text-center
+    font-family: 'sora', sans-serif;
+
+    @apply desktop:w-[10.693rem] text-black flex justify-center items-center text-center desktop:text-[1.1rem]
 }
 
 
 .contacts-first-div h5 {
-    @apply desktop:w-[17rem] text-black w-[80%] text-center
+    font-family: 'sora', sans-serif;
+
+    @apply desktop:w-[17rem] text-black w-[80%] text-center font-medium
 }
 
 
@@ -120,7 +130,9 @@
 }
 
 .sharon {
-    @apply text-[1rem] w-[18.625rem] justify-center items-center sphone:w-[100%] desktop:flex desktop:h-fit desktop:justify-center desktop:text-[1rem] text-[#213e8c] flex
+    font-family: 'sora', sans-serif;
+
+    @apply text-[1.2rem] w-[18.625rem] justify-center items-center sphone:w-[100%] desktop:flex desktop:h-fit desktop:justify-center desktop:text-[1.4rem] text-[#213e8c] flex   desktop:font-bold 
 }
 
 

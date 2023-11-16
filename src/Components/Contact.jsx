@@ -62,7 +62,7 @@ const Contact = () => {
 
 
             <div className="sharon">
-              contact us on
+              contact us on:
             </div>
 
             <div className="contact-iconstl">
