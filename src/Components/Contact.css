@@ -37,7 +37,7 @@
 
 .contact-body-image {
     background-image: url(/Images/illu.jpg);
-    @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat h-[40vh] bg-red-700 flex-grow desktop:h-[36.5625rem]
+    @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat h-[40vh] flex-grow desktop:h-[36.5625rem]
 }
 
 
@@ -45,9 +45,7 @@
     @apply w-[100%] desktop:w-[50%] flex justify-center items-center desktop:h-[100%] py-[2.5rem] h-fit relative
 }
 
-.cbir {
-    @apply bg-red-700 h-[100%]
-}
+
 
 
 .contact-contact h1 {
@@ -135,7 +133,7 @@
 .contacts-first-div h5 {
     font-family: 'sora', sans-serif;
 
-    @apply desktop:w-[17rem] text-black w-[80%] text-center font-medium
+    @apply desktop:w-[17rem] text-black w-[80%] text-center font-medium text-[0.8rem] desktop:text-[1rem]
 }
 
 

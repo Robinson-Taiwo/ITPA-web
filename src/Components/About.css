@@ -63,16 +63,16 @@
 }
 
 .part-img {
-    @apply w-[100%] h-[40vh] desktop:w-[80%] flex flex-row 
+    @apply w-[100%] h-[40vh] desktop:w-[80%] flex desktop:flex-row flex-col items-center justify-center
 }
 
 
 .part-img-div{
-    @apply w-[50%] h-[100%] flex flex-col items-center justify-center 
+    @apply desktop:w-[50%] w-[100%] h-[100%] flex flex-col items-center justify-center 
 }
 
 .part-img img {
-    @apply w-[50%] h-[100%] rounded-2xl
+    @apply desktop:w-[50%] h-[100%] rounded-2xl w-[80%]
 }
 
 
