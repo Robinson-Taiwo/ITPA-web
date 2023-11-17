@@ -88,13 +88,20 @@ const About = () => {
           </h1>
 
 
-          <h4 data-aos="fade-up">
-            ITPA  has an impeccable partnership with ICT owners and tech inclined personel to foster tech
-          </h4>
+
 
           <div className="part-img">
 
+            <div className="part-img-div">
+
+              <h4  className='fol' data-aos="fade-up">
+                INFORMATION TECHNOLOGY PROFESSIONALS ASSOCIATION  has an impeccable partnership with ICT owners, tech inclined personel and several agencies in Nigeria to foster tech Worldwide
+              </h4>
+
+            </div>
             <img data-aos="fade-up" src={kwa} alt="" />
+
+
 
           </div>
 

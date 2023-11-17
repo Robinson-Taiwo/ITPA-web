@@ -3,7 +3,7 @@
 }
 
 .contact-header {
-    background-image: url(/Images/itpa33.JPG);
+    background-image: url(/Images/audio.jpg);
     @apply flex items-center justify-start w-[80%] h-[40vh] bg-center bg-cover bg-no-repeat desktop:h-[50vh] mt-[2rem] rounded-3xl mb-[2rem]
 }
 
@@ -22,17 +22,31 @@
     @apply h-[100%] w-[100%] bg-opacity-0
 }
 
+/* .contacts-body {
+    @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-fit h-[100%] relative
+} */
+
 .contacts-body {
-    @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-[70vh] h-[100%]
+    @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-[100%] h-[100%] relative
 }
+
+/* .contact-body-image {
+    background-image: url(/Images/illu.jpg);
+    @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat h-[40vh] bg-red-700 flex-grow desktop:h-[100%]
+} */
 
 .contact-body-image {
     background-image: url(/Images/illu.jpg);
-    @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat desktop:h-[100%] h-[40vh]
+    @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat h-[40vh] bg-red-700 flex-grow desktop:h-[36.5625rem]
 }
 
+
 .contact-body-content {
-    @apply w-[100%] desktop:w-[50%] flex justify-center items-center desktop:h-[100%] py-[2.5rem] h-[60vh]
+    @apply w-[100%] desktop:w-[50%] flex justify-center items-center desktop:h-[100%] py-[2.5rem] h-fit relative
+}
+
+.cbir {
+    @apply bg-red-700 h-[100%]
 }
 
 
@@ -72,7 +86,7 @@
 
 
 .contacts-first-div {
-    @apply desktop:flex desktop:gap-[1.6rem] desktop:text-white h-[60vh] desktop:flex-col items-center justify-between flex flex-col
+    @apply desktop:flex desktop:gap-[1.6rem] desktop:text-white h-[60vh] desktop:flex-col items-center justify-between flex flex-col desktop:h-fit
 }
 
 
@@ -132,7 +146,7 @@
 .sharon {
     font-family: 'sora', sans-serif;
 
-    @apply text-[1.2rem] w-[18.625rem] justify-center items-center sphone:w-[100%] desktop:flex desktop:h-fit desktop:justify-center desktop:text-[1.4rem] text-[#213e8c] flex   desktop:font-bold 
+    @apply text-[1.2rem] w-[18.625rem] justify-center items-center sphone:w-[100%] desktop:flex desktop:h-fit desktop:justify-center desktop:text-[1.4rem] text-[#213e8c] flex desktop:font-bold
 }
 
 

@@ -89,6 +89,8 @@ const Contact = () => {
         <div className="contact-body-image">
 
 
+
+
         </div>
 
       </div>
