@@ -368,14 +368,7 @@ const Home = () => {
                </div>
 
 
-               <div className="floating-whatsapp">
-                    {/* WhatsApp icon or button */}
-                    <a href="https://api.whatsapp.com/send?phone=08088704731" target="_blank" rel="noopener noreferrer">
-                         {/* You can use an SVG or an image for the WhatsApp icon */}
-                         <img src={whatsapp} alt="WhatsApp" />
-                    </a>
-               </div>
-
+             
 
           </PageLayout>
      )

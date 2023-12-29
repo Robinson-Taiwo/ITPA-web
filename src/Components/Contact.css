@@ -18,22 +18,17 @@
 }
 
 .contact-overlay {
-    /* background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(117, 115, 115, 0) 0%, rgba(124, 122, 122, 0.8) 0%); */
+
     @apply h-[100%] w-[100%] bg-opacity-0
 }
 
-/* .contacts-body {
-    @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-fit h-[100%] relative
-} */
+
 
 .contacts-body {
     @apply flex flex-col-reverse w-[100%] desktop:flex-row desktop:h-[100%] h-[100%] relative
 }
 
-/* .contact-body-image {
-    background-image: url(/Images/illu.jpg);
-    @apply w-[100%] desktop:w-[50%] bg-cover bg-center bg-no-repeat h-[40vh] bg-red-700 flex-grow desktop:h-[100%]
-} */
+
 
 .contact-body-image {
     background-image: url(/Images/illu.jpg);

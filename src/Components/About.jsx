@@ -5,7 +5,7 @@ import check from "../assets/Icons/check.svg"
 import PageLayout from './PageLayout'
 import tech from "/Images/tech.jpg"
 import AOS from 'aos';
-
+import goals from './Goals';
 import kwa from "/Images/kwac.webp"
 import "./About.css"
 import MissionCard from './MissionCard'
@@ -56,15 +56,15 @@ const About = () => {
 
         <div data-aos="fade-up" className="statement-cards">
 
-          <MissionCard data-aos="fade-up" title=" Our Mission" content="Coalition of Information and Communication Technology Professionals for Societal Development.
+          <MissionCard data-aos="fade-up" title=" Our Mission" list=""  content="The mission of the Information Technology Professionals Association (ITPA) is to promote and advance the field of information technology, foster professional development, and create a thriving community of IT professionals in Kwara State and beyond.
 
 " />
 
-          <MissionCard data-aos="fade-up" title=" Our Vision" content="Our vision is to generate new values to the world by developing end to end I.T solutions that meets the needs of modern day business.
+          <MissionCard data-aos="fade-up" title=" Our Vision" list="" content="Our vision is to be a leading professional association that empowers and supports IT professionals in achieving excellence in their careers, while contributing to the growth and development of the IT industry.
 
 " />
 
-          <MissionCard data-aos="fade-up" title=" Our Goal" content="Extending Technology and building professionals" />
+          <MissionCard data-aos="fade-up" title=" Our Goal" list={goals} content="" />
 
           {/* title="Vision" content="Your vision statement goes here." */}
         </div>
