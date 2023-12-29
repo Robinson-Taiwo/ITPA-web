@@ -69,13 +69,22 @@ const Contact = () => {
 
               <div>
 
+
                 <img src={instagram} alt="" className="contact-icon" />
+<a href="https://twitter.com/ITPAconnect?s=09">
 
                 <img src={x} alt="" className="contact-icon" />
+</a>
+
+<a href="https://www.facebook.com/iTPAConnect?mibextid=vk8aRt">
 
                 <img src={facebook} alt="" className="contact-icon" />
+</a>
 
-                <img src={linkedin} alt="" className="contact-icon" />
+<a href="https://www.linkedin.com/in/itpa-itpa-b719b2279">
+<img src={linkedin} alt="" className="contact-icon" />
+</a>
+
 
               </div>
 

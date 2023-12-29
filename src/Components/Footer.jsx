@@ -71,10 +71,23 @@ const Footer = () => {
           <div>
             <h6 className='footer-socials' >follow us</h6>
 
-            <img src={instagram} alt="" />
-            <img src={x} alt="" />
+<a href="">   <img src={instagram} alt="" />  </a>
+<a href="https://twitter.com/ITPAconnect?s=09"> 
+            <img src={x} alt="" /> </a>
+
+<a href="https://www.facebook.com/iTPAConnect?mibextid=vk8aRt">
+
             <img src={facebook} alt="" />
-            <img src={linkedin} alt="" />
+
+</a>
+
+            <a href="https://www.linkedin.com/in/itpa-itpa-b719b2279">  <img src={linkedin} alt="" /></a>
+
+
+
+           
+           
+           
 
 
           </div>

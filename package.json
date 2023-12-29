@@ -1,5 +1,6 @@
 {
   "name": "itpa-web",
+  "homepage": "http://www.itpaconnect.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
